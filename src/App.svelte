@@ -3,6 +3,6 @@
   import Counter from './lib/Counter.svelte'
 </script>
 
-<h2>Time since last big Overwatch Workshop update</h2>
+<h2>Time since last <a href={env.LAST_UPDATE_PATCH_NOTES_LINK} target="_blank">big Overwatch Workshop update</a></h2>
 
 <Counter since={env.LAST_UPDATE_TIMESTAMP} />
