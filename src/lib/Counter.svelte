@@ -27,6 +27,10 @@
 		seconds = differenceInSeconds(now, remainingMonthsDate) % 60;
 	}
 
+	function formatClockDigits(number: number) {
+		return Math.floor(number).toString().padStart(2, "0");
+	}
+
 	onMount(() => {
 		const updateInterval = setInterval(update, 500);
 
@@ -36,7 +40,11 @@
 	})
 </script>
 
-{hours}:{minutes}:{seconds}
+{
+[hours, minutes, seconds]
+	.map((number) => formatClockDigits(number))
+	.join(':')
+}
 
 {#if days > 0}
 	{days} day{days === 1 ? '' : 's'}
