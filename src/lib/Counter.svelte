@@ -33,6 +33,7 @@
 
 	onMount(() => {
 		const updateInterval = setInterval(update, 500);
+		update();
 
 		return () => { // onUnmount()
 			clearInterval(updateInterval);
