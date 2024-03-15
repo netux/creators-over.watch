@@ -5,10 +5,12 @@ $app-min-width: 400px; // $app-font-size * 25
   color-scheme: light dark;
 
   --text-color: rgba(255, 255, 255, 0.87);
+  --link-text-color: #34a8eb;
   --background-color: #242424;
 
   @media (prefers-color-scheme: light) {
     --text-color: #213547;
+    --link-text-color: #0074b8;
     --background-color: #ffffff;
   }
 }
@@ -25,6 +27,10 @@ body {
   display: flex;
   place-items: center;
   min-height: 100vh;
+}
+
+a, a:visited {
+  color: var(--link-text-color);
 }
 
 #app {
