@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { differenceSinceDate, formatClockDigits, pluralize } from './util'
+	import { differenceSinceDate, padLeftWithZeroes, pluralize } from './util'
 
 	export let since: Date;
 
@@ -63,11 +63,11 @@
 </style>
 
 <div class="counter">
-	<span class="digit">{formatClockDigits(years)}</span>
+	<span class="digit">{padLeftWithZeroes(years)}</span>
 	<span class="separator">:</span>
-	<span class="digit">{formatClockDigits(months)}</span>
+	<span class="digit">{padLeftWithZeroes(months)}</span>
 	<span class="separator">:</span>
-	<span class="digit">{formatClockDigits(days)}</span>
+	<span class="digit">{padLeftWithZeroes(days)}</span>
 
 	<span class="label">{pluralize('year', years)}</span>
 	<span class="label">{pluralize('month', months)}</span>

@@ -14,8 +14,8 @@ export function differenceSinceDate(since: Date) {
 	}
 }
 
-export function formatClockDigits(number: number) {
-	return Math.floor(number).toString().padStart(2, "0");
+export function padLeftWithZeroes(number: number, count = 2) {
+	return Math.floor(number).toString().padStart(count, "0");
 }
 
 export function pluralize(string: string, count: number) {
