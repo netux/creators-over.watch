@@ -1,10 +1,11 @@
 <script lang="ts">
   import * as env from './lib/env'
-  import Counter from './lib/Counter.svelte'
+  import FancyCounter from './lib/FancyCounter.svelte'
+  import SimpleCounter from './lib/SimpleCounter.svelte'
 </script>
 
 <style lang="scss">
-  .header, .footer {
+  .header, .counter, .footer {
     margin: 1rem 0;
   }
 
@@ -14,10 +15,19 @@
 </style>
 
 <div class="header">It's been</div>
-
-<Counter since={env.LAST_UPDATE_TIMESTAMP} />
-
+<div class="counter">
+  <FancyCounter since={env.LAST_BIG_UPDATE_TIMESTAMP} />
+</div>
 <div class="footer">
   since the last big
-  <a href={env.LAST_UPDATE_PATCH_NOTES_LINK} target="_blank">Overwatch Workshop update</a>
+  <a href={env.LAST_BIG_UPDATE_PATCH_NOTES_LINK} target="_blank">Overwatch Workshop update</a>
 </div>
+
+<hr />
+
+<small>
+  And
+  <SimpleCounter since={env.LAST_OKAY_UPDATE_TIMESTAMP} />
+  since the last moderately okay
+  <a href={env.LAST_OKAY_UPDATE_PATCH_NOTES_LINK} target="_blank">Overwatch Workshop update</a>
+</small>

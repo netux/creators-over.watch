@@ -1,29 +1,17 @@
 <script lang="ts">
-	import {
-		differenceInYears,
-		differenceInMonths,
-		differenceInDays,
-	} from 'date-fns';
 	import { onMount } from 'svelte';
+	import { differenceSinceDate, formatClockDigits, pluralize } from './util'
 
 	export let since: Date;
 
 	let years: number, months: number, days: number;
 
 	function update() {
-		const now = new Date();
+		const diff = differenceSinceDate(since);
 
-		years = differenceInYears(now, since);
-		months = differenceInMonths(now, since) % 12;
-		days = differenceInDays(now, since) % 30;
-	}
-
-	function formatClockDigits(number: number) {
-		return Math.floor(number).toString().padStart(2, "0");
-	}
-
-	function pluralize(string: string, count: number) {
-		return string + (count === 1 ? '' : 's');
+		years = diff.years;
+		months = diff.months;
+		days = diff.days;
 	}
 
 	onMount(() => {
