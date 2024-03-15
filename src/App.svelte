@@ -1,7 +1,17 @@
 <script lang="ts">
-  import * as env from './lib/env'
-  import FancyCounter from './lib/FancyCounter.svelte'
-  import SimpleCounter from './lib/SimpleCounter.svelte'
+  import * as env from './lib/env';
+  import FancyCounter from './lib/FancyCounter.svelte';
+  import SimpleCounter from './lib/SimpleCounter.svelte';
+  import { padLeftWithZeroes } from './lib/util';
+
+  function getPatchNoteLink(update: Date) {
+    const year = update.getFullYear(),
+          month = update.getMonth() + 1,
+          day = update.getDate();
+    return "https://overwatch.blizzard.com/en-us/news/patch-notes/live/" +
+      `${year}/${padLeftWithZeroes(month)}` +
+      `#patch-${padLeftWithZeroes(year, 4)}-${padLeftWithZeroes(month)}-${padLeftWithZeroes(day)}`
+  }
 </script>
 
 <style lang="scss">
@@ -25,7 +35,7 @@
 </div>
 <div class="after">
   since the last important
-  <a href={env.LAST_BIG_UPDATE_PATCH_NOTES_LINK} target="_blank">Overwatch Workshop update</a>
+  <a href={getPatchNoteLink(env.LAST_BIG_UPDATE_TIMESTAMP)} target="_blank">Overwatch Workshop update</a>
 </div>
 
 <hr />
@@ -34,5 +44,5 @@
   and
   <SimpleCounter since={env.LAST_OKAY_UPDATE_TIMESTAMP} />
   since the last moderately okay
-  <a href={env.LAST_OKAY_UPDATE_PATCH_NOTES_LINK} target="_blank">Overwatch Workshop update</a>
+  <a href={getPatchNoteLink(env.LAST_OKAY_UPDATE_TIMESTAMP)} target="_blank">Overwatch Workshop update</a>
 </small>
