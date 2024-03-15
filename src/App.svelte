@@ -5,17 +5,22 @@
 </script>
 
 <style lang="scss">
-  .before, .counter, .after {
+  .before, .big-counter, .after {
     margin: 1rem 0;
   }
 
   .before {
     font-size: 1.5rem;
   }
+
+  .big-counter {
+    width: fit-content;
+    margin: 0 auto;
+  }
 </style>
 
 <div class="before">It's been</div>
-<div class="counter">
+<div class="big-counter">
   <FancyCounter since={env.LAST_BIG_UPDATE_TIMESTAMP} />
 </div>
 <div class="after">
