@@ -3,32 +3,27 @@
 		differenceInYears,
 		differenceInMonths,
 		differenceInDays,
-		differenceInHours,
-		differenceInMinutes,
-		differenceInSeconds,
-		addMonths
 	} from 'date-fns';
 	import { onMount } from 'svelte';
 
 	export let since: Date;
 
-	let years: number, months: number, days: number,
-			hours: number, minutes: number, seconds: number;
+	let years: number, months: number, days: number;
 
 	function update() {
 		const now = new Date();
-		const remainingMonthsDate = addMonths(since, years * 12 + months);
 
 		years = differenceInYears(now, since);
-		months = differenceInMonths(now, since) - years * 12;
-		days = differenceInDays(now, remainingMonthsDate);
-		hours = differenceInHours(now, remainingMonthsDate) % 24;
-		minutes = differenceInMinutes(now, remainingMonthsDate) % 60;
-		seconds = differenceInSeconds(now, remainingMonthsDate) % 60;
+		months = differenceInMonths(now, since) % 12;
+		days = differenceInDays(now, since) % 30;
 	}
 
 	function formatClockDigits(number: number) {
 		return Math.floor(number).toString().padStart(2, "0");
+	}
+
+	function pluralize(string: string, count: number) {
+		return string + (count === 1 ? '' : 's');
 	}
 
 	onMount(() => {
@@ -41,20 +36,52 @@
 	})
 </script>
 
-{
-[hours, minutes, seconds]
-	.map((number) => formatClockDigits(number))
-	.join(':')
-}
+<style lang="scss">
+	:root {
+		--Counter__border-color: #242424;
+		--Counter__background-color: #1c1c1c;
 
-{#if days > 0}
-	{days} day{days === 1 ? '' : 's'}
-{/if}
+		@media (prefers-color-scheme: light) {
+			--Counter__border-color: #d6d6d6;
+			--Counter__background-color: #f9f9f9;
+		}
+	}
 
-{#if months > 0}
-	{months} month{months === 1 ? '' : 's'}
-{/if}
+	.counter {
+		padding: 1rem;
+		border: 1px solid var(--Counter__border-color);
+		background-color: var(--Counter__background-color);
+		border-radius: 1rem;
+		font-size: 4rem;
 
-{#if years > 0}
-	{years} year{years === 1 ? '' : 's'}
-{/if}
+		display: grid;
+		grid-template-columns: 1fr auto 1fr auto 1fr;
+		grid-template-rows: 1fr auto;
+	}
+
+	.digit, .separator {
+		font-family: monospace;
+		line-height: 1.2;
+	}
+
+	.separator {
+		align-self: start;
+		grid-row-start: span 2;
+	}
+
+	.label {
+		font-size: 1rem;
+	}
+</style>
+
+<div class="counter">
+	<span class="digit">{formatClockDigits(years)}</span>
+	<span class="separator">:</span>
+	<span class="digit">{formatClockDigits(months)}</span>
+	<span class="separator">:</span>
+	<span class="digit">{formatClockDigits(days)}</span>
+
+	<span class="label">{pluralize('year', years)}</span>
+	<span class="label">{pluralize('month', months)}</span>
+	<span class="label">{pluralize('day', days)}</span>
+</div>
