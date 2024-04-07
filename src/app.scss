@@ -1,5 +1,5 @@
 $app-font-size: 20px;
-$app-min-width: 500px; // $app-font-size * 25
+$app-min-width: calc($app-font-size * 25);
 
 :root {
   color-scheme: light dark;
