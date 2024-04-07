@@ -2,8 +2,9 @@
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
-  readonly VITE_LAST_UPDATE_TIMESTAMP: string;
-  readonly VITE_LAST_UPDATE_PATCH_NOTES_LINK: string;
+  readonly PUBLIC_LAST_UPDATE_TIMESTAMP: string;
+  readonly PUBLIC_LAST_OKAY_UPDATE_TIMESTAMP: string;
+  readonly PUBLIC_FOOTER_BANNER_TEXT: string;
 }
 
 interface ImportMeta {
