@@ -1,8 +1,21 @@
 import {
 	differenceInYears,
 	differenceInMonths,
-	differenceInDays,
 } from 'date-fns';
+
+function differenceInDays(now: Date, since: Date) {
+	const ONE_DAY = 24 * 60 * 60 * 1000;
+
+	const lastDayOfThenMonth = new Date(
+		new Date(since.getFullYear(), since.getMonth() + 1, 0)
+			.getTime() - (ONE_DAY - 1000)
+	);
+	const totalDaysInThenMonth = lastDayOfThenMonth.getDate() + 1; // +1 because timezones are annoying
+	const daysPassedThenMonth = since.getDate();
+	const daysPassedThisMonth = now.getDate();
+
+	return (totalDaysInThenMonth - daysPassedThenMonth) + daysPassedThisMonth;
+}
 
 export function differenceSinceDate(since: Date) {
 	const now = new Date();
@@ -10,7 +23,7 @@ export function differenceSinceDate(since: Date) {
 	return {
 		years: differenceInYears(now, since),
 		months: differenceInMonths(now, since) % 12,
-		days: differenceInDays(now, since) % 30
+		days: differenceInDays(now, since)
 	}
 }
 
