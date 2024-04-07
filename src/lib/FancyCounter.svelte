@@ -31,7 +31,7 @@
 
 		@media (prefers-color-scheme: light) {
 			--Counter__border-color: #d6d6d6;
-			--Counter__background-color: #f9f9f9;
+			--Counter__background-color: #d9d9d9;
 		}
 	}
 
