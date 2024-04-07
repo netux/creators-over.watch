@@ -3,9 +3,13 @@ function parseDate(input: string) {
 	return date.toString() !== "Invalid Date" ? date : null;
 }
 
+// Extraction
 export const LAST_BIG_UPDATE_TIMESTAMP = parseDate(import.meta.env.PUBLIC_LAST_BIG_UPDATE_TIMESTAMP)!;
 export const LAST_OKAY_UPDATE_TIMESTAMP = parseDate(import.meta.env.PUBLIC_LAST_OKAY_UPDATE_TIMESTAMP);
 
+export const FOOTER_BANNER_TEXT = import.meta.env.PUBLIC_FOOTER_BANNER_TEXT?.toString();
+
+// Validation
 if (!LAST_BIG_UPDATE_TIMESTAMP) {
 	throw new Error("Missing LAST_BIG_UPDATE_TIMESTAMP env variable");
 }
