@@ -1,5 +1,5 @@
 <script lang="ts">
-  import * as env from './lib/env';
+  import { LAST_BIG_UPDATE_TIMESTAMP, LAST_OKAY_UPDATE_TIMESTAMP } from './lib/env';
   import FancyCounter from './lib/FancyCounter.svelte';
   import SimpleCounter from './lib/SimpleCounter.svelte';
   import { padLeftWithZeroes } from './lib/util';
@@ -31,18 +31,20 @@
 
 <div class="before">It's been</div>
 <div class="big-counter">
-  <FancyCounter since={env.LAST_BIG_UPDATE_TIMESTAMP} />
+  <FancyCounter since={LAST_BIG_UPDATE_TIMESTAMP} />
 </div>
 <div class="after">
   since the last important
-  <a href={getPatchNoteLink(env.LAST_BIG_UPDATE_TIMESTAMP)} target="_blank">Overwatch Workshop update</a>
+  <a href={getPatchNoteLink(LAST_BIG_UPDATE_TIMESTAMP)} target="_blank">Overwatch Workshop update</a>
 </div>
 
-<hr />
+{#if LAST_OKAY_UPDATE_TIMESTAMP}
+  <hr />
 
-<small>
-  and
-  <SimpleCounter since={env.LAST_OKAY_UPDATE_TIMESTAMP} />
-  since the last moderately okay
-  <a href={getPatchNoteLink(env.LAST_OKAY_UPDATE_TIMESTAMP)} target="_blank">Overwatch Workshop update</a>
-</small>
+  <small>
+    and
+    <SimpleCounter since={LAST_OKAY_UPDATE_TIMESTAMP} />
+    since the last moderately okay
+    <a href={getPatchNoteLink(LAST_OKAY_UPDATE_TIMESTAMP)} target="_blank">Overwatch Workshop update</a>
+  </small>
+{/if}
