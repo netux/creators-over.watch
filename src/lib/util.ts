@@ -3,28 +3,37 @@ import {
 	differenceInMonths,
 } from 'date-fns';
 
-function differenceInDays(now: Date, since: Date) {
-	const ONE_DAY = 24 * 60 * 60 * 1000;
-
-	const lastDayOfThenMonth = new Date(
-		new Date(since.getFullYear(), since.getMonth() + 1, 0)
-			.getTime() - (ONE_DAY - 1000)
-	);
-	const totalDaysInThenMonth = lastDayOfThenMonth.getDate() + 1; // +1 because timezones are annoying
-	const daysPassedThenMonth = since.getDate();
-	const daysPassedThisMonth = now.getDate();
-
-	return (totalDaysInThenMonth - daysPassedThenMonth) + daysPassedThisMonth;
+function totalDaysInMonth(year: number, month: number) {
+	return new Date(year, month + 1, 0).getDate()
 }
 
+/**
+ * Co-created with Phind LLM model
+ * and also, apparently, from https://github.com/nikitavoloboev/ts/blob/c80915ae2049fb08f144f34ec52043b15c1a6fcf/scripts/getAge.ts
+ */
 export function differenceSinceDate(since: Date) {
 	const now = new Date();
 
-	return {
-		years: differenceInYears(now, since),
-		months: differenceInMonths(now, since) % 12,
-		days: differenceInDays(now, since)
+	let years = now.getFullYear() - since.getFullYear();
+	let months = now.getMonth() - since.getMonth();
+	let days = now.getDate() - since.getDate();
+
+	// When now month is less than since month,
+	// or now month and since month are the same, but now day is less than since day,
+	// subtract a year.
+	if (months < 0 || (months === 0 && days < 0)) {
+			years--;
+			months += 12;
 	}
+
+	// When now day is less than since day,
+	// add back now's previous month's days
+	if (days < 0) {
+			days += totalDaysInMonth(now.getFullYear(), now.getMonth() - 1);
+			months--;
+	}
+
+	return { years, months, days };
 }
 
 export function padLeftWithZeroes(number: number, count = 2) {
