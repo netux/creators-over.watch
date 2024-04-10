@@ -1,8 +1,3 @@
-import {
-	differenceInYears,
-	differenceInMonths,
-} from 'date-fns';
-
 function totalDaysInMonth(year: number, month: number) {
 	return new Date(year, month + 1, 0).getDate()
 }
