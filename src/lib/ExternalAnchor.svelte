@@ -11,12 +11,13 @@
 
 <style lang="scss">
 	.icon {
-		margin-left: 0.5ch;
+		margin-left: 0.25ch;
+		user-select: none;
 
 		:global(> svg) {
-			width: 1em;
-			height: 1em;
-			vertical-align: text-bottom;
+			width: 1.2em;
+			aspect-ratio: 1;
+			vertical-align: middle;
 		}
 	}
 </style>
