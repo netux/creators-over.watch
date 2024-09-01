@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { Router, Route } from "svelte-routing";
 	import HomePage from './HomePage.svelte';
   import { FOOTER_BANNER_TEXT } from './lib/env';
 </script>
@@ -23,7 +24,11 @@
   }
 </style>
 
-<HomePage />
+<Router>
+  <Route
+    component={HomePage}
+  />
+</Router>
 
 {#if FOOTER_BANNER_TEXT}
   <footer class="footer-banner">
