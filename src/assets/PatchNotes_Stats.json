@@ -1,0 +1,2933 @@
+{
+  "lastUpdatedDate": "2024-09-01T03:36:55.879Z",
+  "data": [
+    {
+      "date": "2019-05-21",
+      "highlights": [
+        "Overwatch Anniversary 2019"
+      ],
+      "workshopHighlights": [
+        "Workshop added"
+      ],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 2,
+        "workshop": 1
+      },
+      "bugFixes": {
+        "general": 2,
+        "gamemode": 0,
+        "hero": 12,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2019-06-03",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 3,
+        "gamemode": 0,
+        "hero": 5,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2019-06-18",
+      "highlights": [
+        "Baptiste Reunion Challenge",
+        "Replays added"
+      ],
+      "workshopHighlights": [
+        "Visual update to Workshop Editor",
+        "Checkboxes to perform actions on multiple items",
+        "Conditions/Actions/Rules can now be disabled without deletion",
+        "(PC) Text-based format accepted for pasting from clipboard",
+        "Max effects count increased from 64 to 128",
+        "Added modification of variables at specific array index"
+      ],
+      "updates": {
+        "general": 0,
+        "gamemode": 2,
+        "hero": 7,
+        "workshop": 8
+      },
+      "bugFixes": {
+        "general": 7,
+        "gamemode": 0,
+        "hero": 5,
+        "workshop": 10
+      }
+    },
+    {
+      "date": "2019-07-02",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 2,
+        "gamemode": 0,
+        "hero": 1,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2019-07-16",
+      "highlights": [
+        "Summer Games 2019",
+        "Subtitles added"
+      ],
+      "workshopHighlights": [
+        "Added ability to measure server performance"
+      ],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 5
+      },
+      "bugFixes": {
+        "general": 11,
+        "gamemode": 0,
+        "hero": 14,
+        "workshop": 7
+      }
+    },
+    {
+      "date": "2019-07-18",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2019-08-13",
+      "highlights": [
+        "Role Queue added",
+        "Sigma added",
+        "Endorsements available in PvE Events and some Arcade modes",
+        "Mystery Heroes - heroes reset between rounds on Control"
+      ],
+      "workshopHighlights": [
+        "Added ability to detect healing events",
+        "Added ability to detect players joining/leaving a match",
+        "Added ability to detect the host player"
+      ],
+      "updates": {
+        "general": 2,
+        "gamemode": 0,
+        "hero": 30,
+        "workshop": 10
+      },
+      "bugFixes": {
+        "general": 7,
+        "gamemode": 1,
+        "hero": 16,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2019-08-28",
+      "highlights": [
+        "Hotfixing added",
+        "Shared install space between PTR, Live, and other Overwatch installs"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 5,
+        "gamemode": 0,
+        "hero": 2,
+        "workshop": 2
+      }
+    },
+    {
+      "date": "2019-09-17",
+      "highlights": [
+        "Bastion's Brick Challenge"
+      ],
+      "workshopHighlights": [
+        "Create/Destroy Dummy Bot",
+        "Create Beam Effect",
+        "Start/Stop Throttle (directional movement input)",
+        "(PC) Copy variables to CSV"
+      ],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 12,
+        "workshop": 12
+      },
+      "bugFixes": {
+        "general": 7,
+        "gamemode": 1,
+        "hero": 17,
+        "workshop": 2
+      }
+    },
+    {
+      "date": "2019-10-15",
+      "highlights": [
+        "Halloween Terror 2019",
+        "Blizzcon 2019 skins - Illidan Genji and Tyrande Symmetra",
+        "Arcade expanded to 7 cards"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 4,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 1,
+        "gamemode": 1,
+        "hero": 1,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2019-10-24",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 2,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 2,
+        "gamemode": 0,
+        "hero": 2,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2019-11-05",
+      "highlights": [
+        "Map pools added",
+        "Overwatch 2 announced at Blizzcon 2019",
+        "High Precision Mouse Input added",
+        "Baptiste Biotic Launcher random spread removed"
+      ],
+      "workshopHighlights": [
+        "Added variable renaming",
+        "Allow up to 128 variables",
+        "Added map detection"
+      ],
+      "updates": {
+        "general": 4,
+        "gamemode": 0,
+        "hero": 4,
+        "workshop": 9
+      },
+      "bugFixes": {
+        "general": 4,
+        "gamemode": 2,
+        "hero": 7,
+        "workshop": 13
+      }
+    },
+    {
+      "date": "2019-12-10",
+      "highlights": [
+        "Winter Wonderland 2019",
+        "While You Wait (playing games while in queue)",
+        "Armor damage reduction increased from 3 to 5"
+      ],
+      "workshopHighlights": [
+        "Added gamemode detection"
+      ],
+      "updates": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 16,
+        "workshop": 3
+      },
+      "bugFixes": {
+        "general": 8,
+        "gamemode": 1,
+        "hero": 10,
+        "workshop": 4
+      }
+    },
+    {
+      "date": "2020-01-16",
+      "highlights": [
+        "Lunar New Year 2020",
+        "Party Flex for Role Queue"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 7,
+        "gamemode": 0,
+        "hero": 9,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 2,
+        "gamemode": 8,
+        "hero": 5,
+        "workshop": 2
+      }
+    },
+    {
+      "date": "2020-01-23",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 4,
+        "gamemode": 0,
+        "hero": 1,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-01-28",
+      "highlights": [
+        "Sigma's Gravitic Flux can now be interrupted"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 11,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-02-12",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 7,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-02-25",
+      "highlights": [
+        "Ashe's Mardi Gras Challenge",
+        "Hero Pools added",
+        "Experimental Card added with 1-3-2 Role Queue"
+      ],
+      "workshopHighlights": [
+        "Added Workshop Chamber, Island, and Expanse",
+        "Added Script Diagnostics panel",
+        "Added Subroutines",
+        "Improved flow control constructions",
+        "Added ability to create nuanced healing modifications",
+        "Allowed Workshop actions to interact with gameplay stuns",
+        "Optimized variable manipulation and control flow"
+      ],
+      "updates": {
+        "general": 5,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 43
+      },
+      "bugFixes": {
+        "general": 6,
+        "gamemode": 2,
+        "hero": 4,
+        "workshop": 18
+      }
+    },
+    {
+      "date": "2020-03-12",
+      "highlights": [
+        "Overwatchy Archives 2020",
+        "Replay Sharing added",
+        "Competitive - If both teams complete an offense round with more than 2 minutes remaining, time is removed equally from both teams until one team has 2 minutes remaining"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 5,
+        "gamemode": 2,
+        "hero": 10,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 9,
+        "gamemode": 1,
+        "hero": 6,
+        "workshop": 7
+      }
+    },
+    {
+      "date": "2020-03-24",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 2,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-04-06",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 11,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 2,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-04-14",
+      "highlights": [
+        "Echo added",
+        "Map pools removed",
+        "Paris and Horizon Lunar Colony deprioritized in map pool",
+        "Tracer Blink reworked, now tries to travel around obstacles",
+        "Middle East datacenters added",
+        "Added patch notes link in game"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 2,
+        "gamemode": 3,
+        "hero": 3,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 6,
+        "gamemode": 6,
+        "hero": 3,
+        "workshop": 1
+      }
+    },
+    {
+      "date": "2020-04-15",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 2,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-04-21",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 8,
+        "workshop": 1
+      }
+    },
+    {
+      "date": "2020-04-29",
+      "highlights": [
+        "Sleep Dart duration reduced from 6 to 5 seconds",
+        "Cassidy Flashbang stun duration lowered from 0.85 to 0.7 seconds",
+        "Earthshatter knockdown duration reduced from 3 to 2.5 seconds",
+        "Sigma's Accretion knockdown duration no longer scales with distance"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 8,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-05-06",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 1,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-05-19",
+      "highlights": [
+        "Overwatch Anniversary 2020",
+        "Improved Communications Wheel",
+        "Patch Notes available in-game",
+        "Custom Game share codes can now be re-uploaded",
+        "Competitive Deathmatch Season 3"
+      ],
+      "workshopHighlights": [
+        "Added ability to cancel primary action of a player",
+        "Improved control flow within loops",
+        "Allowed setting ability cooldown within scripts",
+        "Added ability to determine which ability caused a specific healing/damage event",
+        "Added detection of knockback events",
+        "Added control over crouching, meleeing, and jumping"
+      ],
+      "updates": {
+        "general": 10,
+        "gamemode": 1,
+        "hero": 23,
+        "workshop": 28
+      },
+      "bugFixes": {
+        "general": 6,
+        "gamemode": 4,
+        "hero": 26,
+        "workshop": 1
+      }
+    },
+    {
+      "date": "2020-05-20",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 1,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-06-02",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 3,
+        "gamemode": 0,
+        "hero": 4,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-06-16",
+      "highlights": [
+        "2019 OWL MVP Skin: Alien Zarya",
+        "Priority Requue",
+        "Deflect can be cancelled manually",
+        "Competitive Open Queue Season 2"
+      ],
+      "workshopHighlights": [
+        "Added ability to attach/detach players",
+        "Added ability to force player position",
+        "Added detection of alternate forms and Echo's Duplicate"
+      ],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 7,
+        "workshop": 7
+      },
+      "bugFixes": {
+        "general": 2,
+        "gamemode": 2,
+        "hero": 8,
+        "workshop": 21
+      }
+    },
+    {
+      "date": "2020-06-30",
+      "highlights": [
+        "Open Queue Added to Competitive Play",
+        "3900 SR placement cap added",
+        "Brigitte Repair Pack no longer grants additional armor"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 10,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 2,
+        "gamemode": 0,
+        "hero": 5,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-07-14",
+      "highlights": [
+        "Sigma's Maestro Challenge",
+        "Cities & Countries soundtrack released"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 6,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 4,
+        "gamemode": 6,
+        "hero": 8,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 2,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 3,
+        "gamemode": 0,
+        "hero": 2,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-08-04",
+      "highlights": [
+        "Summer Games 2020 - Lucioball Remix added",
+        "Priority Requeue added for backfilling",
+        "Max group size 2 for >=3900 SR"
+      ],
+      "workshopHighlights": [
+        "Allowed lopsided teams (e.g. 1v4, 4v8)",
+        "Ammo/active weapon/reload detection and management",
+        "Enable/Disable Game Mode HUD/In-World UI",
+        "Enable/Disable Hero HUD/Kill Feed/Messages/Scoreboard/Nameplates",
+        "Get/Set Ability Charge/Resource",
+        "Enable/Disable Movement Collision with Environment/Players",
+        "Voice Line Modification",
+        "Set Player Health",
+        "Custom Health Pools",
+        "Workshop Settings",
+        "Input Binding String",
+        "Mapped Array",
+        "Event Was Environment"
+      ],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 2,
+        "workshop": 47
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 13,
+        "workshop": 4
+      }
+    },
+    {
+      "date": "2020-08-13",
+      "highlights": [
+        "Brigitte base health lowered from 200 to 150"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 18,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-08-18",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 3,
+        "gamemode": 0,
+        "hero": 6,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-08-31",
+      "highlights": [
+        "Beam-type damage reduced by 30% (was 20%) when hitting armor",
+        "Falloff added to Widowmaker's scoped shots"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 21,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-09-10",
+      "highlights": [
+        "Shotguns no longer have random rotation"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 3,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-09-15",
+      "highlights": [
+        "Tracer's Comic Challenge",
+        "Season 3 of Competitive 3v3 Lockout Elimination"
+      ],
+      "workshopHighlights": [
+        "Player and Barrier Scaling"
+      ],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 9,
+        "gamemode": 4,
+        "hero": 18,
+        "workshop": 9
+      }
+    },
+    {
+      "date": "2020-09-24",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 7,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-09-29",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 4,
+        "gamemode": 0,
+        "hero": 2,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-10-13",
+      "highlights": [
+        "Halloween Terror 2020 - modifier challenges added to Junkenstein's Revenge",
+        "Elevators now wait at the bottom for a player to step on",
+        "Soldier: 76's spread removed in favor of constant recoil",
+        "New allied ultimate voiceline for Reinhardt's Earthshatter",
+        "Improved Profanity Filter",
+        "Season 3 of Competitive Team Deathmatch"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 2,
+        "hero": 7,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 4,
+        "gamemode": 2,
+        "hero": 10,
+        "workshop": 5
+      }
+    },
+    {
+      "date": "2020-10-16",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 1,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 1,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-10-29",
+      "highlights": [
+        "Brigitte base health increased from 150 to 175",
+        "Cassidy base health increased from 200 to 225",
+        "Symmetra base shields increased from 100 to 125",
+        "Widowmaker base health reduced from 200 to 175",
+        "Mei's Cryo-Freeze now regenerates ammo"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 11,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-11-17",
+      "highlights": [
+        "Symmetra's Restoration Challenge",
+        "Baptiste Amplification Matrix widened",
+        "Lucio Wall Jump On Release added",
+        "Minimum Latency within Custom Games"
+      ],
+      "workshopHighlights": [
+        "Workshop Green Screen",
+        "Max element count increased to 32768",
+        "Colors and buttons changed to full values",
+        "Custom colors",
+        "Wait Until",
+        "Log To Inspector",
+        "Progress bars",
+        "Evaluate Once"
+      ],
+      "updates": {
+        "general": 1,
+        "gamemode": 1,
+        "hero": 4,
+        "workshop": 38
+      },
+      "bugFixes": {
+        "general": 1,
+        "gamemode": 2,
+        "hero": 9,
+        "workshop": 19
+      }
+    },
+    {
+      "date": "2020-11-19",
+      "highlights": [
+        "Ana projectiles now pass through full-health allies",
+        "Brigitte base health reduced from 175 to 150",
+        "Hanzo Storm Arrows can now be manually cancelled",
+        "Various deployables now manually destroyable by owner while dead"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 7,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-12-10",
+      "highlights": [
+        "Immortality Field health decreased from 200 to 150",
+        "Reinhardt Rocket Hammer damage increased from 75 to 85"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 5,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-12-15",
+      "highlights": [
+        "Winter Wonderland 2020",
+        "Priority Pass system introduced",
+        "Replay Viewer improvements - granular HUD/in-world visibility control, improved FOV settings, and more"
+      ],
+      "workshopHighlights": [
+        "Inspector Log File",
+        "String Slice"
+      ],
+      "updates": {
+        "general": 3,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 2
+      },
+      "bugFixes": {
+        "general": 6,
+        "gamemode": 3,
+        "hero": 9,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2020-12-18",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 1,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-01-12",
+      "highlights": [
+        "Kanezaka FFA map added",
+        "Ashe scoped headshot + Mercy damage boost one-shot removed",
+        "Sigma Experimental Barrier redeploy cooldown increased from 1 to 2.5 seconds"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 1,
+        "gamemode": 1,
+        "hero": 5,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 7,
+        "gamemode": 0,
+        "hero": 3,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-01-28",
+      "highlights": [
+        "Zenyatta Orb of Discord damage amplification reduced from 30% to 25%"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 6,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-02-04",
+      "highlights": [
+        "Lunar New Year 2021",
+        "Fine-grained Replay Viewer playback controls",
+        "Bounty Hunter Brawl mode added to the Arcade"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 5,
+        "gamemode": 1,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 3,
+        "gamemode": 6,
+        "hero": 10,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-02-09",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 1,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 1,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-02-18",
+      "highlights": [
+        "Orisa's Fortify now prevents critical headshot damage"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 5,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 1,
+        "gamemode": 2,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-03-09",
+      "highlights": [
+        "Pachimarchi Challenge",
+        "Added option to reduce impact damage effects",
+        "Improved off-screen warning indicators"
+      ],
+      "workshopHighlights": [
+        "Added Workshop Extensions",
+        "Enable/Disable Text/Voice Chat",
+        "Local Player"
+      ],
+      "updates": {
+        "general": 5,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 36
+      },
+      "bugFixes": {
+        "general": 7,
+        "gamemode": 16,
+        "hero": 6,
+        "workshop": 13
+      }
+    },
+    {
+      "date": "2021-03-11",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 7,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-04-06",
+      "highlights": [
+        "Overwatch Archives 2021",
+        "Nvidia Reflex support added",
+        "Season 4 of Competitive 6v6 Lockout Elimination"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 6,
+        "gamemode": 2,
+        "hero": 4,
+        "workshop": 1
+      }
+    },
+    {
+      "date": "2021-04-22",
+      "highlights": [
+        "Baptiste Biotic Launcher changed from 60 flat to 20 impact/50 splash",
+        "Baptiste's Immortality Field min health threshold reduced to 10% (was 20%)",
+        "D.Va Call Mech damage increased from 50 to 250",
+        "Echo Duplicate changed to return Echo to health before Duplicate (min 100 HP)"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 10,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-05-18",
+      "highlights": [
+        "Overwatch Anniversary 2021",
+        "Nameplate Voice Icons added",
+        "Competitive Deathmatch Season 4"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 2,
+        "gamemode": 1,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 4,
+        "gamemode": 4,
+        "hero": 5,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-05-18",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 1,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-05-24",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-06-03",
+      "highlights": [
+        "Moira regenerates healing resource 3 times faster during Coalescence"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 8,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-06-09",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 2,
+        "gamemode": 0,
+        "hero": 2,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-06-22",
+      "highlights": [
+        "Ashe's Deadlock Challenge",
+        "Cross-Play added - platform-specific balance removed"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 2,
+        "gamemode": 0,
+        "hero": 5,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 1,
+        "gamemode": 2,
+        "hero": 4,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-07-01",
+      "highlights": [
+        "Hitscan falloff now scales to a 30% damage minimum (was 50%)"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 7,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-07-06",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-07-20",
+      "highlights": [
+        "Summer Games 2021",
+        "Funky Baptiste's Immortality Field now resembles a disco ball"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 2,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 5,
+        "gamemode": 0,
+        "hero": 1,
+        "workshop": 5
+      }
+    },
+    {
+      "date": "2021-08-05",
+      "highlights": [
+        "Wrecking Ball's Minefield mines no longer stick to walls",
+        "Doomfist Meteor Strike speeds up cooldown rate while in the air",
+        "Genji Shuriken damage increased from 28 to 29, Dragonblade damage reduced from 120 to 110",
+        "Roadhog provides 25% less ultimate charge to enemies"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 11,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-08-11",
+      "highlights": [
+        "Added ability to toggle individual text channels on/off"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 1,
+        "hero": 3,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-08-12",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 1,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-09-07",
+      "highlights": [
+        "Competitive Lockout Elimination Season 4"
+      ],
+      "workshopHighlights": [
+        "Custom Games Browser rework - Popular/Favorites/Recent tabs",
+        "Dedicated Mode Name field"
+      ],
+      "updates": {
+        "general": 0,
+        "gamemode": 1,
+        "hero": 0,
+        "workshop": 2
+      },
+      "bugFixes": {
+        "general": 7,
+        "gamemode": 3,
+        "hero": 5,
+        "workshop": 1
+      }
+    },
+    {
+      "date": "2021-09-28",
+      "highlights": [
+        "Malevento FFA map added"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 1,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 2,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-10-12",
+      "highlights": [
+        "Halloween Terror 2021",
+        "Mercy Guardian Angel targeting settings update - added Prefer Facing Target",
+        "Competitive Team Deathmatch Season 4"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 2,
+        "gamemode": 1,
+        "hero": 1,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 3,
+        "gamemode": 2,
+        "hero": 11,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-10-26",
+      "highlights": [
+        "Changed Jesse McCree's name to Cole Cassidy"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 1,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 4,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2021-11-09",
+      "highlights": [
+        "Cassidy's New Blood Challenge"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 1,
+        "gamemode": 2,
+        "hero": 8,
+        "workshop": 1
+      }
+    },
+    {
+      "date": "2021-12-16",
+      "highlights": [
+        "Winter Wonderland 2021",
+        "Reworked voice chat - added Voice Chat Volume and Voice Chat Mic Volume settings",
+        "Competitive No Limits Season 2"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 3,
+        "gamemode": 2,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2022-01-06",
+      "highlights": [
+        "Moira Fade allow for much higher jump height",
+        "Earthshatter now deals additional 200 damage within 1.75m of impact area",
+        "Hanzo Storm arrows ricochet once on impact",
+        "Cassidy can now activate Combat Roll while midair",
+        "Wrecking Ball's Grappling Claw now has a maximum duration of 6 seconds"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 6,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 2,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2022-01-25",
+      "highlights": [
+        "Lunar New Year 2022",
+        "Mercy's Resurrect now freezes souls midair durint resurrection",
+        "Holding the Resurrect input while on cooldown now casts the ability immediately once available"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 3,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 1,
+        "gamemode": 1,
+        "hero": 4,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2022-01-27",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 2,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2022-02-22",
+      "highlights": [
+        "Reaper's Code of Violence Challenge",
+        "Overwatch: Heroes & Villains soundtrack released"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 2,
+        "gamemode": 1,
+        "hero": 4,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2022-03-15",
+      "highlights": [
+        "OWL Grand Finals Championship skin - Shanghai Dragons \"Zhulong\" Sombra",
+        "Competitive 6v6 Lockout Elimination Season 5",
+        "Paris and Horizon Lunar Colony removed from Quick Play and Competitive"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 2,
+        "gamemode": 2,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 4,
+        "gamemode": 1,
+        "hero": 1,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2022-04-05",
+      "highlights": [
+        "Overwatch Remix: Volume 1"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 1,
+        "gamemode": 1,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2022-04-19",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2022-05-17",
+      "highlights": [
+        "Overwatch Remix: Volume 2",
+        "OWL Kickoff Clash skin - Luchador Reaper"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 2,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 2,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2022-07-19",
+      "highlights": [
+        "OWL Midseason Madness skin - Royal Knight Mercy"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2022-08-09",
+      "highlights": [
+        "Overwatch Remix: Volume 3"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 2,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2022-09-06",
+      "highlights": [
+        "Overwatch Credits Last Chance event - all season cosmetics available for purchase",
+        "OWL Summer Showdown skin - Genji Happi"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 2,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 1,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2022-10-04",
+      "highlights": [
+        "Overwatch 2 released - Season 1 Begins",
+        "Added Sojourn, Kiriko, and Junker Queen",
+        "Role Passives introduced",
+        "Push gamemode added",
+        "Seasonal map pools across Quick Play and Competitive introduced"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 23,
+        "gamemode": 2,
+        "hero": 6,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2022-10-13",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 17,
+        "gamemode": 4,
+        "hero": 3,
+        "workshop": 2
+      }
+    },
+    {
+      "date": "2022-10-25",
+      "highlights": [
+        "Halloween Terror 2022 - Wrath of the Bride"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 7,
+        "gamemode": 4,
+        "hero": 17,
+        "workshop": 2
+      }
+    },
+    {
+      "date": "2022-11-17",
+      "highlights": [
+        "Crossplay console players now have Aim Assist enabled"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 3,
+        "gamemode": 0,
+        "hero": 15,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 19,
+        "gamemode": 1,
+        "hero": 17,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2022-12-06",
+      "highlights": [
+        "Season 2 Begins",
+        "Ramattra added",
+        "Shambali Monastery (Escort map) added",
+        "Damage role passive reload speed bonus 25% -> 35%, no longer provides a move speed bonus"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 5,
+        "gamemode": 1,
+        "hero": 47,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 6,
+        "gamemode": 11,
+        "hero": 18,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2022-12-12",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 1,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2022-12-15",
+      "highlights": [
+        "Sojourn's Disruptor Shot no longer slows enemies",
+        "Ramattra's Nemesis Form now increases movement speed by 20%",
+        "Orisa's Terra Surge now pierces through barriers on impact",
+        "Ana's Biotic Grenade duration increased from 3 seconds to 4 seconds"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 15,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-01-05",
+      "highlights": [
+        "New Seasonal Mode: Battle For Olympus FFA",
+        "Junker Queen's now heal for remaining wound damage when an enemy dies with wounds",
+        "Junker Queen's Carnage cooldown is now reduced by 2 seconds per enemy impacted",
+        "Dealing damage with Moira's Biotic Orb now restores a small amount of healing resource",
+        "Competitive Capture the Flag 2023 Season"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 3,
+        "hero": 8,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 12,
+        "gamemode": 4,
+        "hero": 9,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-01-24",
+      "highlights": [
+        "Sojourn Railgun energy gain changed from % of damage dealt to flat 5 energy per hit"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 10,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 2,
+        "gamemode": 0,
+        "hero": 4,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-02-07",
+      "highlights": [
+        "Season 3 Begins",
+        "Antarctic Peninsula (Control map) added",
+        "Tank health totals reduced in non-Role-Queue matches",
+        "Game Report tab added - previous match scoreboards now visible",
+        "Max ultimate charge retained when swapping heroes reduced from 30% to 25%",
+        "Can now use the ping system to print Ability 1/2 cooldowns to team chat",
+        "Mystery Heroes now limits teams to a maximum of three of each role",
+        "Initial iteration of Streamer Protect added",
+        "Ability to spend and earn Overwatch Credits added"
+      ],
+      "workshopHighlights": [
+        "Workshop Editor reenabled",
+        "More nuanced reporting for custom games added"
+      ],
+      "updates": {
+        "general": 17,
+        "gamemode": 1,
+        "hero": 47,
+        "workshop": 2
+      },
+      "bugFixes": {
+        "general": 17,
+        "gamemode": 13,
+        "hero": 20,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-02-21",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 11,
+        "gamemode": 0,
+        "hero": 3,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-03-07",
+      "highlights": [
+        "Overwatch 2 x One-Punch Man",
+        "Snapshot of match scoreboard saved and displayed post-match",
+        "Orisa's Terra Surge can now be interrupted by Hack",
+        "Activating Ramattra's Annihilation now refreshes Nemesis Form's bonus armor",
+        "B.O.B. now prefers targets that are shot with Ashe's rifle",
+        "Pharah's Jump Jet movement is now influenced by directional input",
+        "Baptiste's Immortality Field minimum health threshold increased from 10% to 25%",
+        "Season 1 of Competitive Mystery Heroes begins"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 17,
+        "gamemode": 4,
+        "hero": 15,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 8,
+        "gamemode": 13,
+        "hero": 10,
+        "workshop": 4
+      }
+    },
+    {
+      "date": "2023-04-11",
+      "highlights": [
+        "Season 4 Begins",
+        "Lifeweaver (Support hero) added",
+        "Stranded Spawn system added",
+        "Map pools removed",
+        "Talantis (experimental Control map) added",
+        "Seasonal rank decay removed",
+        "Ana's Sleep Dart duration against tanks reduced from 5 to 3.5 seconds",
+        "Brigitte's Rally now upgrades her Barrier Shield's size and health",
+        "Mercy's Caduceus Staff no longer deals increased healing for allies below 50% health",
+        "Moira's Fade can now be activated during Coalescence"
+      ],
+      "workshopHighlights": [
+        "Workshop Projectiles added"
+      ],
+      "updates": {
+        "general": 9,
+        "gamemode": 2,
+        "hero": 25,
+        "workshop": 4
+      },
+      "bugFixes": {
+        "general": 11,
+        "gamemode": 6,
+        "hero": 29,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-04-25",
+      "highlights": [
+        "Lifeweaver default control scheme reworked",
+        "Options to return to legacy Lifeweaver control scheme added",
+        "Lifeweaver's Parting Gift passive removed"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 15,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 4,
+        "gamemode": 1,
+        "hero": 8,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-05-09",
+      "highlights": [
+        "Starwatch: Galactic Rescue limited-time event",
+        "Battle for Olympus returns",
+        "Push now increases player respawn times by 2 seconds when their forward spawn is activated",
+        "Competitive Deathmatch 2023 season begins",
+        "Junker Queen's Rampage now deals 40 impact damage, wound damage decreased by 40 to compensate",
+        "Junker Queen's Adrenaline Rush passive healing multiplier increased from 1.25x to 2x",
+        "Many quality-of-life settings added to heroes to hide various HUD elements (not counted in update count)"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 6,
+        "gamemode": 2,
+        "hero": 16,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 9,
+        "gamemode": 7,
+        "hero": 23,
+        "workshop": 1
+      }
+    },
+    {
+      "date": "2023-05-17",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 3,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-06-13",
+      "highlights": [
+        "Season 5 Begins",
+        "On-Fire Returns",
+        "Watchpoint: Gibraltar (Escort map) rework",
+        "Cassidy's Magnetic Grenade now applies the Hindered status effect",
+        "Reaper's Wraith Form and Moira's Fade can no longer be activated when in a mobility-locked state",
+        "Mei's Endothermic Blaster now builds up a 'Deep Chill' effect which can be detonated",
+        "Defeat the Demon Lord limited-time gamemode",
+        "Weekly challenge progress no longer reset to zero"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 8,
+        "gamemode": 4,
+        "hero": 32,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 8,
+        "gamemode": 8,
+        "hero": 30,
+        "workshop": 5
+      }
+    },
+    {
+      "date": "2023-06-28",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 7,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 3,
+        "gamemode": 5,
+        "hero": 3,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-07-11",
+      "highlights": [
+        "Summer Games 2023",
+        "Team Queue (5 stack only) experiment added",
+        "Symmetra now regenerates shield health when using primary fire to damage barriers or shield health"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 7,
+        "gamemode": 1,
+        "hero": 21,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 16,
+        "gamemode": 6,
+        "hero": 21,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-08-10",
+      "highlights": [
+        "Season 6 Begins - Overwatch 2: Invasion",
+        "Illari (Support hero) added",
+        "Flashpoint gamemode added - New Junk City and Suravasa maps added",
+        "Invasion story missions added (paywalled)",
+        "Firing Range added to the Practice Range",
+        "D.Va's pilot form is now immune while ejecting",
+        "Doomfist's Power Block and Ramattra's Block now reduce damage from stuck projectiles",
+        "Cassidy's Base Health increased from 200 to 225",
+        "Sombra's EMP no longer destroys Lifeweaver's Tree of Life",
+        "Kiriko's Protection Suzu now provides additional healing when cleasing a negative effect",
+        "Number of wins required to appear on the Top 500 leaderboard increased from 25 to 50"
+      ],
+      "workshopHighlights": [],
+      "notes": [
+        "Co-op Mode Hero Updates not counted in hero update count"
+      ],
+      "updates": {
+        "general": 14,
+        "gamemode": 3,
+        "hero": 52,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 15,
+        "gamemode": 4,
+        "hero": 28,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-08-24",
+      "highlights": [
+        "Illari's Captive Sun projectile and explosion are now blocked by barriers"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 5,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 4,
+        "gamemode": 5,
+        "hero": 3,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-09-07",
+      "highlights": [
+        "Overwatch 2 Anniversary 2023",
+        "Hero Mastery mode added",
+        "Bastion's Configuration: Artillery can no longer deal critical damage",
+        "Support passive delay increased from 1.5 to 2 seconds"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 3,
+        "gamemode": 0,
+        "hero": 16,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 12,
+        "gamemode": 13,
+        "hero": 13,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-09-19",
+      "highlights": [
+        "Completing a Hero Mastery course in the gold tier now grants bonus score based on how quickly the course was completed"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 1,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 2,
+        "gamemode": 1,
+        "hero": 1,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "highlights": [
+        "Bastion's Reconfigure no longer restores armor when transforming"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 1,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-10-10",
+      "highlights": [
+        "Season 7 Begins",
+        "Halloween Terror 2023 - Trials of Sanctuary Diablo crossover event",
+        "Samoa (Control map) added",
+        "Route 66 rework",
+        "Sombra rework",
+        "Unranked leaver penalties reworked - now prevents requeueing at various punishment levels",
+        "Group Respawn added",
+        "Mei's Deep Chill passive removed"
+      ],
+      "workshopHighlights": [],
+      "notes": [
+        "Quality-of-life updates not counted in hero update count"
+      ],
+      "updates": {
+        "general": 15,
+        "gamemode": 8,
+        "hero": 40,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 4,
+        "gamemode": 9,
+        "hero": 11,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-10-19",
+      "highlights": [
+        "Fixed a bug allowing players to spawn extra training bots in the Practice Range"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 3,
+        "gamemode": 2,
+        "hero": 4,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-10-31",
+      "highlights": [
+        "Le Sserafim x Overwatch 2 Limited-Time Event",
+        "Zenyatta's Orb of Discord now cannot be reapplied to the same target for 7 seconds after being removed",
+        "Fixed a bug where Mercy's beams from fading out before reaching an invisible Sombra"
+      ],
+      "workshopHighlights": [],
+      "notes": [
+        "Quality-of-life updates not counted in hero update count"
+      ],
+      "updates": {
+        "general": 5,
+        "gamemode": 1,
+        "hero": 26,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 14,
+        "gamemode": 8,
+        "hero": 8,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-11-14",
+      "highlights": [
+        "Roadhog rework"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 21,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 2,
+        "gamemode": 0,
+        "hero": 8,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-11-16",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 4,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-12-05",
+      "highlights": [
+        "Season 8 Begins",
+        "Mauga (Tank hero) added",
+        "Battle of the Beasts limited-time event",
+        "Maximum ultimate charge retained when swapping heroes reduced from 25% to 15%",
+        "Doomfist now regenerates health while in the air during Meteor Strike",
+        "Winston's Tesla Cannon now ignores armor damage reduction",
+        "Sombra's EMP now locks out enemy abilities for 3 seconds",
+        "Activiating Mercy's Valkyrie no longer disconnects her active beam",
+        "Winter Wonderland 2023"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 15,
+        "gamemode": 6,
+        "hero": 37,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 4,
+        "gamemode": 8,
+        "hero": 13,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-12-12",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 3,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2023-12-19",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 5,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 4,
+        "gamemode": 0,
+        "hero": 1,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-01-09",
+      "highlights": [
+        "Lunar New Year 2024 - Year of the Dragon",
+        "Mauga's Cage Fight no longer grants infinite ammo",
+        "Orisa no longer takes forced critical damage during Fortify",
+        "Sojourn Railgun energy no longer decays below 25%",
+        "Ana's Biotic Grenade effect reduced from 3.5 to 3 seconds",
+        "Lifeweaver's Petal Platform is no longer pierced by piercing projectiles"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 22,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 9,
+        "gamemode": 0,
+        "hero": 7,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-01-12",
+      "highlights": [
+        "Quick Play: Hacked - Quicker Play"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 1,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-01-17",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 1,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-02-13",
+      "highlights": [
+        "Season 9 Begins",
+        "Cosmic Crisis limited-time event",
+        "Friends can now be endorsed",
+        "New crosshair options added",
+        "Projectile sizes increased across the board",
+        "Health pools increased across the board",
+        "Global regeneration passive added",
+        "Support passive now reduced time for global regeneration to kick in",
+        "Damage role passive changed to reduce enemy healing received",
+        "Pharah rework",
+        "Junkertown rework"
+      ],
+      "workshopHighlights": [],
+      "notes": [
+        "Health pool increases counted individually",
+        "Projectiles size increases counted as six general updates"
+      ],
+      "updates": {
+        "general": 28,
+        "gamemode": 8,
+        "hero": 96,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 6,
+        "gamemode": 4,
+        "hero": 16,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-02-21",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 20,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-03-12",
+      "highlights": [
+        "Overwatch 2 x Cowboy Bebop",
+        "Hero Mastery: Gauntlet added",
+        "Demotion Protection added to Competitive Play",
+        "Fixed a bug causing deployables to not apply the DPS passive"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 4,
+        "gamemode": 1,
+        "hero": 37,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 9,
+        "gamemode": 4,
+        "hero": 3,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-03-18",
+      "highlights": [
+        "Double Trouble (Quick Play: Hacked) - Teams may have two of the same hero"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 1,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-03-19",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 7,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-03-28",
+      "highlights": [
+        "Venture Hero Trial limited-time event"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 1,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-04-01",
+      "highlights": [
+        "Balanced Overwatch April Fools mode"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 132,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-04-16",
+      "highlights": [
+        "Season 10 Begins",
+        "Venture (Damage hero) added",
+        "Clash Trial limited-time event",
+        "Hide My Name added to Streamer Protect",
+        "Wide grouping/matchmaking introduced for Competitive Play",
+        "Wrecking Ball rework - retractable grappling claw and redistributable Adaptive Shield",
+        "Doomfist's Empowered Punch is no longer consumed when cancelling the windup with another ability"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 23,
+        "gamemode": 1,
+        "hero": 28,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 4,
+        "gamemode": 4,
+        "hero": 16,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-04-30",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 7,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 3,
+        "gamemode": 1,
+        "hero": 2,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-05-14",
+      "highlights": [
+        "Overwatch 2 x Porsche",
+        "Pressure Competitive Modifier added",
+        "Armor changed from flat 30% damage reduction to 5 damage per projectile (max 50% of base)",
+        "Global regeneration changed from flat 20 HP/s to 10 HP/s + 5% of maximum health",
+        "Tank passive now reduces critical headshot damage by 25%",
+        "Sigma's Gravitic Flux no longer requires line-of-sight to pick up targets",
+        "Brigitte's Rally now resets Shield Bash's cooldown on activation"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 5,
+        "gamemode": 0,
+        "hero": 17,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 2,
+        "gamemode": 4,
+        "hero": 3,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-05-21",
+      "highlights": [
+        "Venture's Drill Dash cooldown is now accelerated by 90% when underground"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 4,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 1,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-05-24",
+      "highlights": [
+        "Sigma's Gravitic Flux once again requires line-of-sight to pick up targets"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 6,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-05-30",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 2,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-06-20",
+      "highlights": [
+        "Season 11 Begins",
+        "Community Crafted limited-time mode",
+        "Runasapi (Push map) added",
+        "Colloseo rework",
+        "Cassidy's Magnetic Grenade replaced with Flashbang",
+        "Kiriko's Protection Suzu no longer cleanses hard knockdown stuns",
+        "Junker Queen Jagged Blade (Gracie) now pulls tanks further",
+        "Sojourn's Railgun now scales from 1-100 damage (was 30-130)",
+        "Hero Mastery: Gauntlet removed"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 6,
+        "gamemode": 10,
+        "hero": 34,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 3,
+        "hero": 6,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-07-09",
+      "highlights": [
+        "Overwatch 2 x Transformers",
+        "Summer Games 2024",
+        "Mythic Weapons added - Mythic Bound Demon Weapon skin for Reinhardt",
+        "Armor flat damage reduction increased from 5 to 10 damage per projectile",
+        "Damage role passive is half as effective against Tanks",
+        "Ana Sleep Dart duration against tanks decreased from 3.5 to 3 seconds",
+        "Enemy health bars now display when they are at their Low Health threshold"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 3,
+        "gamemode": 0,
+        "hero": 43,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 5,
+        "gamemode": 0,
+        "hero": 5,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-07-12",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 11,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-07-15",
+      "highlights": [
+        "Pickable Passives (Quick Play: Hacked)"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 1,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-07-19",
+      "highlights": [
+        "Juno Hero Trial limited-time event"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 1,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      }
+    },
+    {
+      "date": "2024-07-23",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 0,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 7,
+        "gamemode": 0,
+        "hero": 1,
+        "workshop": 0
+      }
+    }
+  ]
+}

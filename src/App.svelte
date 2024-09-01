@@ -1,6 +1,7 @@
 <script lang="ts">
   import { Router, Route } from "svelte-routing";
 	import HomePage from './HomePage.svelte';
+	import TimelinePage from './TimelinePage.svelte';
   import { FOOTER_BANNER_TEXT } from './lib/env';
 </script>
 
@@ -27,6 +28,10 @@
 <Router>
   <Route
     component={HomePage}
+  />
+  <Route
+    path="/timeline"
+    component={TimelinePage}
   />
 </Router>
 

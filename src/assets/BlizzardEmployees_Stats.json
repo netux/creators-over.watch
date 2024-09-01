@@ -1,0 +1,33 @@
+{
+	"lastUpdatedDate": "2024-09-01T03:36:55.879Z",
+	"data": [
+		{
+			"date": "2019-08-20",
+			"action": "left",
+			"employee": "Keith \"Galeswift\" Miron",
+			"workedOnWorkshop": true,
+			"source": "https://antifandom.com/overwatch/wiki/Keith_Miron#cite_note-2"
+		},
+		{
+			"date": "2021-02-23",
+			"action": "left",
+			"employee": "Zach \"Magzie\" Metcalf",
+			"workedOnWorkshop": true,
+			"source": "https://discord.com/channels/570672959799164958/570672959799164964/813834829304561725"
+		},
+		{
+			"date": "2022-04-01",
+			"action": "left",
+			"employee": "Derek \"Splat\" Mulder",
+			"workedOnWorkshop": true,
+			"source": "https://discord.com/channels/570672959799164958/570672959799164964/959497966262030347"
+		},
+		{
+			"date": "2022-03-25",
+			"action": "left",
+			"employee": "Dan \"Shiny\" Reed",
+			"workedOnWorkshop": true,
+			"source": "https://discord.com/channels/570672959799164958/570672959799164964/953066785014444082"
+		}
+	]
+}

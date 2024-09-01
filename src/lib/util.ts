@@ -63,3 +63,35 @@ export function getPatchNoteLink(patchNoteDate: Date) {
     `#patch-${formatDate(patchNoteDate, 'yyyy-MM-dd')}`
   )
 }
+
+export function *range(start: number, end: number, step: number = 1) {
+  for (let i = start; i < end; i += step) {
+    yield i;
+  }
+
+  return end;
+}
+
+export function sum(iter: Iterable<number>): number {
+  let r = 0;
+  for (const value of iter) {
+    r += value;
+  }
+  return r;
+}
+
+export function min(iter: Iterable<number>): number {
+  let r: number | null = null;
+  for (const value of iter) {
+    r = r == null || value > r ? value : r;
+  }
+  return r ?? 0;
+}
+
+export function max(iter: Iterable<number>): number {
+  let r: number | null = null;
+  for (const value of iter) {
+    r = r == null || value < r ? value : r;
+  }
+  return r ?? 0;
+}
