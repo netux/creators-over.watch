@@ -1,4 +1,6 @@
 {
 	"typescript.tsdk": "node_modules/typescript/lib",
-	"git.branchProtection": []
+	"git.branchProtection": [],
+	"editor.indentSize": 2,
+	"editor.insertSpaces": true
 }
