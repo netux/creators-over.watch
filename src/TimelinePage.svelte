@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { getDaysInYear, getDayOfYear, format as formatDate } from 'date-fns';
+  import { getDaysInYear, getDayOfYear, format as formatDate, parseISO } from 'date-fns';
   import patchNotesStatsJSON from './assets/PatchNotes_Stats.json';
   import blizzardEmployeeStatsJSON from './assets/BlizzardEmployees_Stats.json';
 	import TimelinePlotPointPopover from './lib/TimelinePlotPointPopover.svelte';
@@ -32,7 +32,7 @@
 
     return {
       type: PlotPointType.OVERWATCH_PATCH_NOTE,
-      date: new Date(statJSON.date),
+      date: parseISO(statJSON.date),
       event,
       weight,
       stat: statJSON
@@ -47,7 +47,7 @@
     .map((statJSON) => {
       return {
         type: PlotPointType.EMPLOYEE_STATUS_CHANGE,
-        date: new Date(statJSON.date),
+        date: parseISO(statJSON.date),
         event: PlotPointEvent.WORKSHOP_DEV_LEAVES,
         weight: maxPatchNotesPlotPointWeight * 1.05,
         stat: statJSON
