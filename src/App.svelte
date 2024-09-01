@@ -21,6 +21,7 @@
     text-align: left;
     font-size: 0.8rem;
     color: var(--App__footer-text-color);
+    white-space: break-spaces;
     border-top: 1px solid var(--App__footer-outline-color);
   }
 </style>
@@ -37,6 +38,6 @@
 
 {#if FOOTER_BANNER_TEXT}
   <footer class="footer-banner">
-    { FOOTER_BANNER_TEXT }
+    {@html FOOTER_BANNER_TEXT.replace('\\n', '\n')}
   </footer>
 {/if}
