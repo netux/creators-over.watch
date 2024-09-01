@@ -4,22 +4,22 @@ $app-min-width: calc($app-font-size * 25);
 :root {
   color-scheme: light dark;
 
-  --text-color: #e3e3e3;
+  --primary-text-color: #e3e3e3;
   --link-text-color: #34a8eb;
-  --background-color: #242424;
+  --primary-background-color: #242424;
 
   @media (prefers-color-scheme: light) {
-    --text-color: #213547;
+    --primary-text-color: #213547;
     --link-text-color: #0074b8;
-    --background-color: #ffffff;
+    --primary-background-color: #ffffff;
   }
 }
 
 :root {
   font-family: Arial, sans-serif;
   font-size: $app-font-size;
-  color: var(--text-color);
-  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
 }
 
 body {
