@@ -1,27 +1,22 @@
-interface PatchNoteStatCountsJSON {
+interface PatchNoteStatCounts {
 	general: number;
 	gamemode: number;
 	hero: number;
 	workshop: number;
 }
 
-export interface PatchNoteStatData {
+export interface PatchNoteStat {
 	highlights: string[];
 	workshopHighlights: string[];
-	updates: PatchNoteStatCountsJSON;
-	bugFixes: PatchNoteStatCountsJSON;
+	updates: PatchNoteStatCounts;
+	bugFixes: PatchNoteStatCounts;
 }
 
-export interface BlizzardEmployeeStatData {
+export interface BlizzardEmployeeStat {
 	action: string;
 	employee: string;
 	workedOnWorkshop: boolean;
 	source?: string;
-}
-
-export interface Stat<T> {
-	lastUpdatedDate: string;
-	data: T;
 }
 
 export enum PlotPointType {
@@ -45,5 +40,5 @@ interface PlotPointBase {
 }
 
 export type PlotPoint =
-	| (PlotPointBase & { type: PlotPointType.OVERWATCH_PATCH_NOTE, stat: PatchNoteStatData })
-	| (PlotPointBase & { type: PlotPointType.EMPLOYEE_STATUS_CHANGE, stat: BlizzardEmployeeStatData })
+	| (PlotPointBase & { type: PlotPointType.OVERWATCH_PATCH_NOTE, stat: PatchNoteStat })
+	| (PlotPointBase & { type: PlotPointType.EMPLOYEE_STATUS_CHANGE, stat: BlizzardEmployeeStat })

@@ -1,7 +1,7 @@
 <script lang="ts">
   import { getDaysInYear, getDayOfYear, format as formatDate, parseISO } from 'date-fns';
-  import patchNotesStatsJSON from './assets/PatchNotes_Stats.json';
-  import blizzardEmployeeStatsJSON from './assets/BlizzardEmployees_Stats.json';
+  import patchNotesStatsJSON from './assets/PatchNotes_Stats.jsonc';
+  import blizzardEmployeeStatsJSON from './assets/BlizzardEmployees_Stats.jsonc';
 	import TimelinePlotPointPopover from './lib/TimelinePlotPointPopover.svelte';
   import { min, range, sum } from './lib/util';
   import { PlotPointEvent, PlotPointType } from './lib/model';
