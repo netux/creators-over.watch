@@ -263,6 +263,21 @@
       color: var(--Timeline__event-nothing-related-to-workshop-color);
     }
   }
+
+  .rotate-screen-indicator {
+    display: none;
+    margin: auto;
+  }
+
+  @media (max-aspect-ratio: 1.2/1) {
+    .timeline {
+      display: none;
+    }
+
+    .rotate-screen-indicator {
+      display: initial;
+    }
+  }
 </style>
 
 <div class="timeline">
@@ -410,3 +425,9 @@
   </div>
 </div>
 
+<div class="rotate-screen-indicator">
+  <RotateScreenIndicator
+    width="15rem"
+    height="15rem"
+  />
+</div>
