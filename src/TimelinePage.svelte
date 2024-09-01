@@ -280,6 +280,10 @@
   }
 </style>
 
+<svelte:head>
+  <title>Creators of Overwatch - Timeline</title>
+</svelte:head>
+
 <div class="timeline">
   <div>
     <header class="heading">

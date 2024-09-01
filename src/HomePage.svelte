@@ -33,6 +33,10 @@
   }
 </style>
 
+<svelte:head>
+  <title>Creators of Overwatch</title>
+</svelte:head>
+
 <div class="container">
   <div class="before">It's been</div>
   <div class="big-counter">
