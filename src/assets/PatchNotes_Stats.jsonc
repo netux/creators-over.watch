@@ -3071,5 +3071,38 @@
         "workshop": 0
       }
     }
+    /**
+     * To add an entry, just copy the one above it, and change stuff as needed.
+     * Use the official patch notes site as reference: https://overwatch.blizzard.com/en-us/news/patch-notes/live
+     *
+     * Make sure to add yourself in the `addedBy` field, and to change the
+     * `date` field ('yyyy-mm-dd' format) to the date of the patch note you are
+     * adding.
+     *
+     * Notes:
+     * - For the date, use the one în the name of the update (e.g. "Overwatch 2
+     * Retail Patch Notes - <this date>") instead of the smaller date above it.
+     * - A change is counted as single list item on the patch notes page
+     * (basically, if it has a bullet next to it, it is a change).
+     * - Developer commentaries are not counted as a change of any kind.
+     * - General updates are usually below the "General Updates" heading (or,
+     * if there is no, highlight).
+     * - Multiple changes to one ability in one patch are counted as multiple
+     * changes.
+     * - Lighting changes to maps are not counted as a change.
+     * - (Non-Workshop) highlights include, but are not limited to: collabs,
+     * events, new heroes, new maps, new game modes, new big features,
+     * significant general gameplay changes.
+     *   - That is, as long as it isn't Workshop or Custom Lobby related.
+     *   - For examples of how these highlights should be worded, look at
+     *   previous entries.
+     *   - This can be highly subjective, so don't refrain from adding
+     *   highlights that you care about.
+     * - Workshop Highlights are mostly new features, or new significant
+     * actions or values
+     *   - I doubt you'll have to worry about those much.
+     * - Highlights shouldn't be to vague or broad (e.g. "Sombra is now more
+     * powerful"). Try to stick to whats in the patch notes.
+     */
   ]
 }
