@@ -1,5 +1,5 @@
 {
-  "lastUpdatedDate": "2024-09-01T03:36:55.879Z",
+  "lastUpdatedDate": "2024-09-02T00:30:58.514Z",
   "data": [
     {
       "addedBy": "CactusPuppy",
@@ -3066,6 +3066,50 @@
       },
       "bugFixes": {
         "general": 7,
+        "gamemode": 0,
+        "hero": 1,
+        "workshop": 0
+      }
+    },
+    {
+      "addedBy": "netux",
+      "date": "2024-08-20",
+      "highlights": [
+        "Season 12 Begins",
+        "Juno (Support hero) added",
+        "Clash gamemode added",
+        "Throne of Anubis (Clash map) added",
+        "Avoid As Teammate feature added",
+        "Wave Respawn is now used in Competitive and non-Competitive modes",
+        "Mid-Year Rank Reset"
+      ],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 25,
+        "gamemode": 3,
+        "hero": 56,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 3,
+        "gamemode": 0,
+        "hero": 3,
+        "workshop": 0
+      }
+    },
+    {
+      "addedBy": "netux",
+      "date": "2024-08-23",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 5,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 0,
         "gamemode": 0,
         "hero": 1,
         "workshop": 0
