@@ -3114,6 +3114,24 @@
         "hero": 1,
         "workshop": 0
       }
+    },
+    {
+      "addedBy": "netux",
+      "date": "2024-09-03",
+      "highlights": [],
+      "workshopHighlights": [],
+      "updates": {
+        "general": 0,
+        "gamemode": 0,
+        "hero": 7,
+        "workshop": 0
+      },
+      "bugFixes": {
+        "general": 4,
+        "gamemode": 0,
+        "hero": 1,
+        "workshop": 0
+      }
     }
     /**
      * To add an entry, just copy the one above it, and change stuff as needed.
