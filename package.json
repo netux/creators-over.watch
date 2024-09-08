@@ -18,7 +18,8 @@
     "tslib": "^2.6.2",
     "typescript": "^5.2.2",
     "vite": "^5.1.6",
-    "vite-plugin-jsonx": "^1.1.2"
+    "vite-plugin-jsonx": "^1.1.2",
+    "vite-tsconfig-paths": "^5.0.1"
   },
   "dependencies": {
     "@floating-ui/dom": "^1.6.10",

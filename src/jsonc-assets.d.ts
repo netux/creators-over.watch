@@ -1,12 +1,16 @@
-declare module "./assets/PatchNotes_Stats.jsonc" {
-  interface Counts {
+interface StatFile<D> {
+  lastUpdatedDate: string;
+  data: D;
+}
+declare module "$assets/PatchNotes_Stats.jsonc" {
+  export interface Counts {
     general: number;
     gamemode: number;
     hero: number;
     workshop: number;
   }
 
-  interface Data {
+  export interface PatchNoteStat {
     addedBy: string;
     date: string;
     highlights: string[];
@@ -15,17 +19,12 @@ declare module "./assets/PatchNotes_Stats.jsonc" {
     bugFixes: Counts
   }
 
-  interface StatFile<D> {
-    lastUpdatedDate: string;
-    data: D;
-  }
-
-  const stats: StatFile<Data[]>;
+  const stats: StatFile<PatchNoteStat[]>;
   export default stats;
 }
 
-declare module "./assets/BlizzardEmployees_Stats.jsonc" {
-  interface Data {
+declare module "$assets/BlizzardEmployees_Stats.jsonc" {
+  export interface BlizzardEmployeeStat {
     date: string;
     action: string;
     employee: string;
@@ -33,13 +32,7 @@ declare module "./assets/BlizzardEmployees_Stats.jsonc" {
     source: string;
   }
 
-  interface StatFile<D> {
-    lastUpdatedDate: string;
-    data: D;
-  }
-
-
-  const stats: StatFile<Data[]>;
+  const stats: StatFile<BlizzardEmployeeStat[]>;
   export default stats;
 }
 
