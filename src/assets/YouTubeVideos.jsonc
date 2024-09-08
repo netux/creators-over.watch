@@ -1,0 +1,57 @@
+[
+  {
+    "creator": "ACE670",
+    "versions": [
+      {
+        "id": "KPPOT7zmQqQ",
+        "title": "The True PvE - The Workshop",
+        "language": "en"
+      },
+      {
+        "id": "-zU4u57yZHw",
+        "language": "es"
+      }
+    ]
+  },
+  {
+    "creator": "DragonEngineer",
+    "versions": [
+      {
+        "id": "0ZX8YPlvgPI",
+        "title": "The Downfall of Overwatch Workshop: A Creator's Perspective. And Channel Update",
+        "language": "en"
+      }
+    ]
+  },
+  // {
+  //   "creator": "CactusPuppy",
+  //   "versions": [
+  //     {
+  //       TBD
+  //     }
+  //   ]
+  // },
+  {
+    "creator": "Marblr",
+    "versions": [
+      {
+        "id": "PJ4PmQKr5u0",
+        "title": "What if Overwatch had Fall Damage?",
+        "language": "en",
+        "timestamp": "43:44"
+      }
+    ],
+    "note": "Section about the frustrations of working with the Workshop in 2024"
+  },
+  {
+    "creator": "TROLLSKI",
+    "versions": [
+      {
+        "id": "Oa5R12Ob6X0",
+        "title": "Little Dark Age - Overwatch Workshop",
+        "language": "en"
+      }
+    ],
+    "note": "Montage of the good times"
+  }
+]

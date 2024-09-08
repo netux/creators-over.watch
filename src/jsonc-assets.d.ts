@@ -36,4 +36,22 @@ declare module "$assets/BlizzardEmployees_Stats.jsonc" {
   export default stats;
 }
 
+declare module "$assets/YouTubeVideos.jsonc" {
+  export interface YouTubeVideoVersion {
+    id: string;
+    title: string;
+    language: string;
+    timestamp?: `${number}:${number}:${number}` | `${number}:${number}`; // hh:mm:ss | mm:ss
+  }
+
+  export interface YouTubeVideo {
+    creator: string;
+    versions: YouTubeVideoVersion[];
+    note?: string;
+  }
+
+  const videos: YouTubeVideo[];
+  export default videos;
+}
+
 export {};
