@@ -22,6 +22,10 @@ $app-min-width: calc($app-font-size * 25);
   background-color: var(--primary-background-color);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
