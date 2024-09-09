@@ -1,10 +1,7 @@
 <script lang="ts">
+  import { t } from 'svelte-i18n';
   import type { YouTubeVideo, YouTubeVideoVersion } from '$assets/YouTubeVideos.jsonc';
-
-  const languageCodeToNameMap: Record<string, string> = {
-    'en': 'English',
-    'es': 'Español'
-  };
+	import ComplexTranslation from './translations/ComplexTranslation.svelte';
 
   export let video: YouTubeVideo;
 
@@ -96,11 +93,30 @@
     <img
       class="thumbnail"
       src="https://i3.ytimg.com/vi/{defaultVersion.id}/maxresdefault.jpg"
-      alt="Thumbnail for {video.creator}'s video {`"${defaultVersion.title}"`}"
+      alt={$t('YouTubeVideoCard.default-version.thumbnail-alt', {
+        values: {
+          videoCreator: video.creator,
+          videoTitle: defaultVersion.title
+        }
+      })}
     />
     <div class="info">
       <div class="info__title">{defaultVersion.title}</div>
-      <div class="info__creator">by <b>{video.creator}</b></div>
+      <div class="info__creator">
+        <ComplexTranslation
+          t={$t('YouTubeVideoCard.default-version.creator', {
+            values: {
+              creator: video.creator
+            }
+          })}
+          markers={{
+            creator: (text) => ({
+              tag: 'b',
+              content: text
+            })
+          }}
+        />
+      </div>
 
       {#if video.note}
         <div class="info__note">{video.note}</div>
@@ -109,12 +125,16 @@
       {#if video.versions.length > 1}
         {@const otherVersions = video.versions.filter((version) => version !== defaultVersion)}
         <div class="info__note">
-          Also in
+          {$t('YouTubeVideoCard.in-other-languages.intro')}
           {#each otherVersions as otherVersion, otherVersionIndex}
             <a
               href={getVideoLink(otherVersion)}
               target="_blank"
-            >{languageCodeToNameMap[otherVersion.language.toLowerCase()] || otherVersion.language}</a>
+            >{
+              $t(`_misc.languages.${otherVersion.language}`) ||
+              // best we can do
+              otherVersion.language.toUpperCase()
+            }</a>
             {#if otherVersionIndex < otherVersions.length - 1}, {/if}
           {/each}
         </div>

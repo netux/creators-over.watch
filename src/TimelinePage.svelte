@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { t } from 'svelte-i18n';
   import { getDaysInYear, getDayOfYear, format as formatDate, parseISO } from 'date-fns';
   import patchNotesStatsJSON from '$assets/PatchNotes_Stats.jsonc';
   import blizzardEmployeeStatsJSON from '$assets/BlizzardEmployees_Stats.jsonc';
@@ -8,6 +9,7 @@
 	import type { PlotPoint } from './lib/model';
 	import RotateScreenIndicator from './lib/RotateScreenIndicator.svelte';
 	import ExternalAnchor from './lib/ExternalAnchor.svelte';
+	import ComplexTranslation from 'lib/translations/ComplexTranslation.svelte';
 
   const patchNotePlotPoints: PlotPoint[] = patchNotesStatsJSON.data.map((statJSON) => {
     let event: PlotPointEvent;
@@ -74,10 +76,10 @@
   }
 
   const PATCH_NOTE_LEGEND_TEXT: { [K in PlotPointEvent]: string } = {
-    [PlotPointEvent.WORKSHOP_DEV_LEAVES]: "Workshop dev leaves",
-    [PlotPointEvent.MAJOR_WORKSHOP_UPDATE]: "Major Workshop update",
-    [PlotPointEvent.WORKSHOP_BUGFIX]: "Workshop bugfix",
-    [PlotPointEvent.NOTHING_RELATED_TO_WORKSHOP]: "Nothing related to Workshop"
+    [PlotPointEvent.WORKSHOP_DEV_LEAVES]: $t('TimelinePage.legend.workshop-dev-leaves'),
+    [PlotPointEvent.MAJOR_WORKSHOP_UPDATE]: $t('TimelinePage.legend.major-workshop-update'),
+    [PlotPointEvent.WORKSHOP_BUGFIX]: $t('TimelinePage.legend.workshop-bugfix'),
+    [PlotPointEvent.NOTHING_RELATED_TO_WORKSHOP]: $t('TimelinePage.legend.nothing-related-to-workshop')
   }
 
   // We need to render the patch notes from highest to lowest priority,
@@ -281,20 +283,40 @@
 </style>
 
 <svelte:head>
-  <title>Creators of Overwatch - Timeline</title>
+  <title>{$t('TimelinePage.tab-title')}</title>
 </svelte:head>
 
 <div class="timeline">
   <div>
     <header class="heading">
-      <span class="heading__title">Overwatch Update Timeline</span>
-      <span class="heading__credits">by <ExternalAnchor href="https://youtube.com/@CactusPuppy">CactusPuppy</ExternalAnchor></span>
+      <span class="heading__title">{$t('TimelinePage.heading.title')}</span>
+      <span class="heading__credits">
+        <ComplexTranslation
+          t={$t('TimelinePage.heading.credits')}
+          markers={{
+            link: (text) => ({
+              component: ExternalAnchor,
+              props: {
+                href: 'https://youtube.com/@CactusPuppy'
+              },
+              slots: {
+                default: text
+              }
+            })
+          }}
+        />
+      </span>
 
       {#if dateRange}
-        <div class="heading__range">
-          {formatDate(dateRange.min, 'yyyy-MM')} - {formatDate(dateRange.max, 'yyyy-MM')}
-          (last updated {formatDate(dataLastUpdated, 'yyyy-MM-dd')})
-        </div>
+        <div class="heading__range">{
+          $t('TimelinePage.heading.range', {
+            values: {
+              min: formatDate(dateRange.min, 'yyyy-MM'),
+              max: formatDate(dateRange.max, 'yyyy-MM'),
+              lastUpdated: formatDate(dataLastUpdated, 'yyyy-MM-dd')
+            }
+          })
+        }</div>
       {/if}
     </header>
 

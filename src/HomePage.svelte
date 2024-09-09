@@ -1,13 +1,13 @@
 <script lang="ts">
-  import {
-    LAST_BIG_UPDATE_DATE,
-    LAST_OKAY_UPDATE_DATE
-  } from './lib/env';
+  import { t, json as tJson } from 'svelte-i18n';
   import { Link } from 'svelte-routing';
   import youtubeVideos from '$assets/YouTubeVideos.jsonc';
   import WorkshopUpdateTimeCounters from './lib/WorkshopUpdateTimeCounters.svelte';
   import YouTubeVideoCard from './lib/YouTubeVideoCard.svelte';
 	import ExternalAnchor from 'lib/ExternalAnchor.svelte';
+  import { LAST_BIG_UPDATE_DATE, LAST_OKAY_UPDATE_DATE } from './lib/env';
+
+  let paragraphs = $tJson('HomePage.call-to-action.paragraphs') as string[];
 </script>
 
 <style lang="scss">
@@ -91,7 +91,7 @@
 </style>
 
 <svelte:head>
-  <title>Creators of Overwatch</title>
+  <title>{$t('HomePage.tab-title')}</title>
 </svelte:head>
 
 <div class="container">
@@ -105,17 +105,10 @@
   </section>
 
   <section class="section section--text">
-    <h1>The Workshop is dead</h1>
-    <p>
-      Following the departure of the main people working in Workshop, the Overwatch Workshop has been left to rot.
-    </p>
-    <p>
-      Since Overwatch 2 became publicly available, the Workshop has gotten more and more broken every patch.
-      Things that used to work no longer do (or were removed entirely without warning), and new things (like new heroes) lack proper support.
-    </p>
-    <p>
-      Workshop could be so much more. But in its current state, it is practically impossible to get anything done in it.
-    </p>
+    <h1>{$t('HomePage.call-to-action.title')}</h1>
+    {#each paragraphs as paragraphText}
+      <p>{paragraphText}</p>
+    {/each}
 
     <div class="cards">
       {#each youtubeVideos as video}
@@ -124,10 +117,14 @@
     </div>
 
     <div class="footer">
-      See also:
+      {$t('HomePage.call-to-action.see-also.list-title')}
       <ul class="footer__links">
-        <li><Link to="/timeline">Timeline of Patch Notes since the Workshop was released</Link></li>
-        <li><ExternalAnchor href="https://workshop.codes/wiki/articles/ow2-workshop-changesbugs">A non-exhaustive list of issues with the Workshop, by the workshop.codes community</ExternalAnchor></li>
+        <li>
+          <Link to="/timeline">{$t('HomePage.call-to-action.see-also.links.patch-notes-timeline')}</Link>
+        </li>
+        <li>
+          <ExternalAnchor href="https://workshop.codes/wiki/articles/ow2-workshop-changesbugs">{$t('HomePage.call-to-action.see-also.links.workshop-codes-workshop-issues-list')}</ExternalAnchor>
+        </li>
       </ul>
       <div class="footer__hashtag">#FixOverwatchWorkshop</div>
     </div>

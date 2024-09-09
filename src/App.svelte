@@ -1,8 +1,11 @@
 <script lang="ts">
-  import { Router, Route } from "svelte-routing";
+  import { Router, Route } from 'svelte-routing';
+  import { isLoading, locale } from 'svelte-i18n';
 	import HomePage from './HomePage.svelte';
 	import TimelinePage from './TimelinePage.svelte';
   import { FOOTER_BANNER_TEXT } from './lib/env';
+
+  import './lib/i18n';
 </script>
 
 <style lang="scss">
@@ -26,15 +29,17 @@
   }
 </style>
 
-<Router>
-  <Route
-    component={HomePage}
-  />
-  <Route
-    path="/timeline"
-    component={TimelinePage}
-  />
-</Router>
+{#if !$isLoading}
+  <Router>
+    <Route
+      component={HomePage}
+    />
+    <Route
+      path="/timeline"
+      component={TimelinePage}
+    />
+  </Router>
+{/if}
 
 {#if FOOTER_BANNER_TEXT}
   <footer class="footer-banner">

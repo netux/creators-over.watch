@@ -1,7 +1,8 @@
 /// <reference types="svelte" />
 /// <reference types="vite/client" />
 /// <reference types="vite-plugin-jsonx/client" />
-/// <reference types="jsonc-assets" />
+/// <reference types="./jsonc-assets" />
+/// <reference types="./i18n" />
 
 interface ImportMetaEnv {
   readonly PUBLIC_LAST_UPDATE_TIMESTAMP: string;

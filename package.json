@@ -24,6 +24,7 @@
   "dependencies": {
     "@floating-ui/dom": "^1.6.10",
     "date-fns": "^3.6.0",
+    "svelte-i18n": "^4.0.0",
     "svelte-ionicons": "^1.1.2",
     "svelte-routing": "^2.13.0"
   }

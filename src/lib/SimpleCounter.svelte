@@ -1,6 +1,7 @@
 <script lang="ts">
+	import { t } from 'svelte-i18n';
 	import { onMount } from 'svelte';
-	import { differenceSinceDate, pluralize, prettyJoin } from './util'
+	import { differenceSinceDate, prettyJoin } from './util'
 
 	export let since: Date;
 
@@ -10,9 +11,16 @@
 		const { years, months, days } = differenceSinceDate(since);
 
 		text = prettyJoin(
-			([[years, 'year'], [months, 'month'], [days, 'day']] as const)
+			([[years, 'years'], [months, 'months'], [days, 'days']] as const)
 				.filter(([count]) => count > 0)
-				.map(([count, label]) => `${count} ${pluralize(label, count)}`)
+				.map(
+					([count, part]) =>
+						`${count} ${$t(`_misc.date.parts.${part}`, {
+							values: {
+								[part]: count
+							}
+						})}`
+					)
 		);
 	}
 

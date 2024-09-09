@@ -1,7 +1,9 @@
 <script lang="ts">
+  import { t } from 'svelte-i18n';
   import FancyCounter from './FancyCounter.svelte';
   import SimpleCounter from './SimpleCounter.svelte';
   import ExternalAnchor from './ExternalAnchor.svelte';
+	import ComplexTranslation from './translations/ComplexTranslation.svelte';
   import { getPatchNoteLink } from './util';
 
   export let lastBigUpdate!: Date;
@@ -23,22 +25,50 @@
   }
 </style>
 
-<div class="before">It's been</div>
+<div class="before">{$t('WorkshopUpdateTimeCounters.last-big-update.before')}</div>
 <div class="big-counter">
   <FancyCounter since={lastBigUpdate} />
 </div>
 <div class="after">
-  since the last important
-  <ExternalAnchor href={getPatchNoteLink(lastBigUpdate)}>Overwatch Workshop update</ExternalAnchor>
+  <ComplexTranslation
+    t={$t('WorkshopUpdateTimeCounters.last-big-update.after')}
+    markers={{
+      link: (text) => ({
+        component: ExternalAnchor,
+        props: {
+          href: getPatchNoteLink(lastBigUpdate)
+        },
+        slots: {
+          default: text
+        }
+      })
+    }}
+  />
 </div>
 
 {#if lastOkayUpdate != null}
   <hr />
 
   <small>
-    and
-    <SimpleCounter since={lastOkayUpdate} />
-    since the last moderately okay
-    <ExternalAnchor href={getPatchNoteLink(lastOkayUpdate)}>Overwatch Workshop update</ExternalAnchor>
+    <ComplexTranslation
+      t={$t('WorkshopUpdateTimeCounters.last-okay-update')}
+      markers={{
+        timeSince: (text) => ({
+          component: SimpleCounter,
+          props: {
+            since: lastOkayUpdate
+          }
+        }),
+        link: (text) => ({
+          component: ExternalAnchor,
+          props: {
+            href: getPatchNoteLink(lastOkayUpdate)
+          },
+          slots: {
+            default: text
+          }
+        })
+      }}
+    />
   </small>
 {/if}
