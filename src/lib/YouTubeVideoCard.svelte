@@ -69,6 +69,10 @@
       margin-bottom: 0.3rem;
     }
 
+    &__title-lang {
+      font-size: 60%;
+    }
+
     &__creator {
       margin-bottom: 0.25rem;
       font-size: 80%;
@@ -101,7 +105,12 @@
       })}
     />
     <div class="info">
-      <div class="info__title">{defaultVersion.title}</div>
+      <div class="info__title">
+        {defaultVersion.title}
+        {#if defaultVersion.language !== $locale}
+          <span class="info__title-lang">({$t(`_misc.languages.${defaultVersion.language}`)})</span>
+        {/if}
+      </div>
       <div class="info__creator">
         <ComplexTranslation
           t={$t('YouTubeVideoCard.default-version.creator', {
@@ -119,7 +128,11 @@
       </div>
 
       {#if video.note}
-        <div class="info__note">{video.note}</div>
+        <div class="info__note">{
+          typeof video.note === 'object'
+            ? video.note[$locale ?? 'en'] || video.note['en']
+            : video.note
+        }</div>
       {/if}
 
       {#if video.versions.length > 1}

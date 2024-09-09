@@ -47,7 +47,7 @@ declare module "$assets/YouTubeVideos.jsonc" {
   export interface YouTubeVideo {
     creator: string;
     versions: YouTubeVideoVersion[];
-    note?: string;
+    note?: string | { [locale: string]: string };
   }
 
   const videos: YouTubeVideo[];

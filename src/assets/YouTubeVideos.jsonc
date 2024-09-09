@@ -42,7 +42,10 @@
         "timestamp": "43:44"
       }
     ],
-    "note": "Section about the frustrations of working with the Workshop in 2024"
+    "note": {
+      "en": "Section about the frustrations of working with the Workshop in 2024",
+      "es": "Sección sobre las frustraciones de trabajar con la Workshop en 2024"
+    }
   },
   {
     "creator": "TROLLSKI",
@@ -53,6 +56,9 @@
         "language": "en"
       }
     ],
-    "note": "Montage of the good times"
+    "note": {
+      "en": "Montage of the good times",
+      "es": "Montaje de los buenos tiempos"
+    }
   }
 ]
