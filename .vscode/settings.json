@@ -2,5 +2,10 @@
 	"typescript.tsdk": "node_modules/typescript/lib",
 	"git.branchProtection": [],
 	"editor.indentSize": 2,
-	"editor.insertSpaces": true
+	"editor.insertSpaces": true,
+	"i18n-ally.localesPaths": [
+		"src/assets/i18n"
+	],
+	"i18n-ally.keystyle": "nested",
+	"i18n-ally.extract.autoDetect": false // this is annoying
 }
