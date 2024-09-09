@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { t } from 'svelte-i18n';
+  import { t, locale } from 'svelte-i18n';
   import type { YouTubeVideo, YouTubeVideoVersion } from '$assets/YouTubeVideos.jsonc';
 	import ComplexTranslation from './translations/ComplexTranslation.svelte';
 
@@ -30,7 +30,7 @@
   };
 
   let defaultVersion: YouTubeVideoVersion | null = null;
-  $: defaultVersion = video.versions.find((version) => version.language === "en") || video.versions[0];
+  $: defaultVersion = video.versions.find((version) => version.language === $locale) || video.versions[0];
 </script>
 
 <style lang="scss">
