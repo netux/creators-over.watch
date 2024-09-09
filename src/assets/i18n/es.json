@@ -1,0 +1,57 @@
+{
+  "_misc": {
+    "languages": {
+      "en": "Inglés",
+      "es": "Español"
+    },
+    "date": {
+      "parts": {
+        "years": "{years, plural, one {año} other {años}}",
+        "months": "{months, plural, one {mes} other {meses}}",
+        "days": "{days, plural, one {día} other {dias}}",
+        "hours": "{hours, plural, one {hora} other {horas}}",
+        "minutes": "{minutes, plural, one {minuto} other {minutos}}",
+        "seconds": "{seconds, plural, one {segundo} other {segundos}}"
+      }
+    }
+  },
+  "HomePage": {
+    "tab-title": "Creadores de Overwatch"
+  },
+  "TimelinePage": {
+    "heading": {
+      "credits": "por <link:CactusPuppy>",
+      "range": "{min} - {max} (última actualización {lastUpdated})",
+      "title": "Cronología de Parches de Overwatch"
+    },
+    "legend": {
+      "major-workshop-update": "Actualización con cosas significativas para la Workshop",
+      "nothing-related-to-workshop": "Nada relacionado con la Workshop",
+      "workshop-bugfix": "Parche con arreglos para la Workshop",
+      "workshop-dev-leaves": "Desarollador de la Workshop se va"
+    },
+    "tab-title": "Creadores de Overwatch - Cronología de actualizaciones"
+  },
+  "TimelinePlotPointPopover": {
+    "content": {
+      "employee-leaves": "{employee} deja Blizzard Entertainment",
+      "overwatch-patch-note": {
+        "no-highlights": "Nada interezante"
+      }
+    },
+    "header": {
+      "employee-status-change": "{plotPointDate}",
+      "overwatch-patch-note": {
+        "notes-link": "notas",
+        "text": "Parche del {plotPointDate}"
+      }
+    }
+  },
+  "WorkshopUpdateTimeCounters": {
+    "last-big-update": {
+      "after": "desde la última gran <link:actualización de la Workshop de Overwatch>",
+      "before": "Han pasado"
+    },
+    "last-okay-update": "y <timeSince> desde que la última <link:actualización de la Workshop de Overwatch> que fué moderadamente okay"
+  }
+}
