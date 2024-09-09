@@ -1,0 +1,81 @@
+{
+  "_misc": {
+    "languages": {
+      "en": "Inglés",
+      "es": "Español"
+    },
+    "date": {
+      "parts": {
+        "years": "{years, plural, one {año} other {años}}",
+        "months": "{months, plural, one {mes} other {meses}}",
+        "days": "{days, plural, one {día} other {dias}}",
+        "hours": "{hours, plural, one {hora} other {horas}}",
+        "minutes": "{minutes, plural, one {minuto} other {minutos}}",
+        "seconds": "{seconds, plural, one {segundo} other {segundos}}"
+      }
+    }
+  },
+  "HomePage": {
+    "tab-title": "Creadores de Overwatch",
+    "call-to-action": {
+      "title": "La Workshop está muerta",
+      "paragraphs": [
+        "Luego de la partida de los principales desarolladores de la Workshop, la Workshop de Overwatch ha quedado abandonada a su suerte.",
+        "Desde que Overwatch 2 se volvio accesible publicamente, la Workshop se ha ido destruyendo más y más con cada actualización.\nLas cosas que solian funcionar ya no lo hacen (o fueron eliminadas por completo sin previo aviso), y las cosas nuevas (como nuevos héroes) carecen de soporte.",
+        "La Workshop podria haber sido mucho más. Pero en su estado actual, es practicamente imposible hacer algo con ella."
+      ],
+      "see-also": {
+        "links": {
+          "patch-notes-timeline": "Cronología de parches desde que que salió la Workshop",
+          "workshop-codes-workshop-issues-list": "Una lista no exhaustiva de problemas con la Workshop, porm la comunidad de workshop.codes"
+        },
+        "list-title": "Ver también:"
+      }
+    }
+  },
+  "TimelinePage": {
+    "heading": {
+      "credits": "por <link:CactusPuppy>",
+      "range": "{min} - {max} (última actualización {lastUpdated})",
+      "title": "Cronología de Parches de Overwatch"
+    },
+    "legend": {
+      "major-workshop-update": "Actualización con cosas significativas para la Workshop",
+      "nothing-related-to-workshop": "Nada relacionado con la Workshop",
+      "workshop-bugfix": "Parche con arreglos para la Workshop",
+      "workshop-dev-leaves": "Desarollador de la Workshop se va"
+    },
+    "tab-title": "Creadores de Overwatch - Cronología de actualizaciones"
+  },
+  "TimelinePlotPointPopover": {
+    "content": {
+      "employee-leaves": "{employee} deja Blizzard Entertainment",
+      "overwatch-patch-note": {
+        "no-highlights": "Nada interezante"
+      }
+    },
+    "header": {
+      "employee-status-change": "{plotPointDate}",
+      "overwatch-patch-note": {
+        "notes-link": "notas",
+        "text": "Parche del {plotPointDate}"
+      }
+    }
+  },
+  "WorkshopUpdateTimeCounters": {
+    "last-big-update": {
+      "after": "desde la última gran <link:actualización de la Workshop de Overwatch>",
+      "before": "Han pasado"
+    },
+    "last-okay-update": "y <timeSince> desde que la última <link:actualización de la Workshop de Overwatch> que fué moderadamente okay"
+  },
+  "YouTubeVideoCard": {
+    "default-version": {
+      "creator": "por <creator:{creator}>",
+      "thumbnail-alt": "Miniatura del video de {videoCreator} \"{videoTitle}\""
+    },
+    "in-other-languages": {
+      "intro": "También en"
+    }
+  }
+}
