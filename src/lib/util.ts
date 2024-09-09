@@ -37,10 +37,6 @@ export function padLeftWithZeroes(number: number, count = 2) {
   return Math.floor(number).toString().padStart(count, "0");
 }
 
-export function pluralize(string: string, count: number) {
-  return string + (count === 1 ? '' : 's');
-}
-
 export function prettyJoin(array: string[]) {
   return array.map((item, index) => {
     let suffix: string;

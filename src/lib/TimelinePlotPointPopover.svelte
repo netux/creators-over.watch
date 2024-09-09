@@ -1,8 +1,10 @@
 <script lang="ts">
-	import { formatDate } from 'date-fns';
+  import { t } from 'svelte-i18n';
+  import { formatDate } from 'date-fns';
   import { flip, shift } from '@floating-ui/core';
 	import Floating from './Floating.svelte';
 	import ExternalAnchor from './ExternalAnchor.svelte';
+	import ComplexTranslation from './translations/ComplexTranslation.svelte';
 	import { getPatchNoteLink } from './util';
   import { PlotPointType } from './model';
 	import type { PlotPoint } from './model';
@@ -71,9 +73,18 @@
     <header class="header">
       {#if plotPoint.type === PlotPointType.OVERWATCH_PATCH_NOTE}
         {@const patchNoteLink = getPatchNoteLink(plotPoint.date)}
-        {plotPointDateAsISO} Patch (<ExternalAnchor href={patchNoteLink}>notes</ExternalAnchor>)
+        {$t('TimelinePlotPointPopover.header.overwatch-patch-note.text', {
+          values: {
+            plotPointDate: plotPointDateAsISO
+          }
+        })}
+        (<ExternalAnchor href={patchNoteLink}>{$t('TimelinePlotPointPopover.header.overwatch-patch-note.notes-link')}</ExternalAnchor>)
       {:else if plotPoint.type === PlotPointType.EMPLOYEE_STATUS_CHANGE}
-        {plotPointDateAsISO}
+        {$t('TimelinePlotPointPopover.header.employee-status-change', {
+          values: {
+            plotPointDate: plotPointDateAsISO
+          }
+        })}
       {/if}
     </header>
     <div class="content">
@@ -88,10 +99,22 @@
             {/each}
           </ul>
         {:else}
-          <i>Nothing interesting</i>
+          <i>{$t('TimelinePlotPointPopover.content.overwatch-patch-note.no-highlights')}</i>
         {/if}
       {:else if plotPoint.type === PlotPointType.EMPLOYEE_STATUS_CHANGE}
-        <b>{plotPoint.stat.employee}</b> leaves Blizzard Entertainment
+        <ComplexTranslation
+          t={$t('TimelinePlotPointPopover.content.employee-leaves', {
+            values: {
+              employee: `<bold:${plotPoint.stat.employee}>`
+            }
+          })}
+          markers={{
+            bold: (text) => ({
+              tag: 'b',
+              content: text
+            })
+          }}
+        />
       {/if}
     </div>
   </div>

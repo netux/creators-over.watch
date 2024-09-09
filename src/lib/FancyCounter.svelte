@@ -1,6 +1,7 @@
 <script lang="ts">
+	import { t } from 'svelte-i18n';
 	import { onMount } from 'svelte';
-	import { differenceSinceDate, padLeftWithZeroes, pluralize } from './util'
+	import { differenceSinceDate, padLeftWithZeroes } from './util';
 
 	export let since: Date;
 
@@ -69,7 +70,19 @@
 	<span class="separator">:</span>
 	<span class="digit">{padLeftWithZeroes(days)}</span>
 
-	<span class="label">{pluralize('year', years)}</span>
-	<span class="label">{pluralize('month', months)}</span>
-	<span class="label">{pluralize('day', days)}</span>
+	<span class="label">{$t('_misc.date.parts.years', {
+		values: {
+			years
+		}
+	})}</span>
+	<span class="label">{$t('_misc.date.parts.months', {
+		values: {
+			months
+		}
+	})}</span>
+	<span class="label">{$t('_misc.date.parts.days', {
+		values: {
+			days
+		}
+	})}</span>
 </div>

@@ -1,9 +1,7 @@
 <script lang="ts">
-  import {
-    LAST_BIG_UPDATE_DATE,
-    LAST_OKAY_UPDATE_DATE
-  } from './lib/env';
+  import { t } from 'svelte-i18n';
   import WorkshopUpdateTimeCounters from './lib/WorkshopUpdateTimeCounters.svelte';
+  import { LAST_BIG_UPDATE_DATE, LAST_OKAY_UPDATE_DATE } from './lib/env';
 </script>
 
 <style lang="scss">
@@ -17,7 +15,7 @@
 </style>
 
 <svelte:head>
-  <title>Creators of Overwatch</title>
+  <title>{$t('HomePage.tab-title')}</title>
 </svelte:head>
 
 <div class="counters">

@@ -1,0 +1,57 @@
+{
+  "_misc": {
+    "languages": {
+      "en": "English",
+      "es": "Spanish"
+    },
+    "date": {
+      "parts": {
+        "years": "{years, plural, one {year} other {years}}",
+        "months": "{months, plural, one {month} other {months}}",
+        "days": "{days, plural, one {day} other {days}}",
+        "hours": "{hours, plural, one {hour} other {hours}}",
+        "minutes": "{minutes, plural, one {minute} other {minutes}}",
+        "seconds": "{seconds, plural, one {second} other {seconds}}"
+      }
+    }
+  },
+  "HomePage": {
+    "tab-title": "Creators of Overwatch"
+  },
+  "WorkshopUpdateTimeCounters": {
+    "last-big-update": {
+      "before": "It's been",
+      "after": "since the last <link:Overwatch Workshop update>"
+    },
+    "last-okay-update": "and <timeSince> since the last moderately okay <link:Overwatch Workshop update>"
+  },
+  "TimelinePage": {
+    "tab-title": "Creators of Overwatch - Patches Timeline",
+    "heading": {
+      "title": "Overwatch Update Timeline",
+      "range": "{min} - {max} (last updated {lastUpdated})",
+      "credits": "by <link:CactusPuppy>"
+    },
+    "legend": {
+      "workshop-dev-leaves": "Workshop dev leaves",
+      "major-workshop-update": "Major Workshop update",
+      "workshop-bugfix": "Workshop bugfix",
+      "nothing-related-to-workshop": "Nothing related to Workshop"
+    }
+  },
+  "TimelinePlotPointPopover": {
+    "header": {
+      "overwatch-patch-note": {
+        "text": "{plotPointDate} Patch",
+        "notes-link": "notes"
+      },
+      "employee-status-change": "{plotPointDate}"
+    },
+    "content": {
+      "overwatch-patch-note": {
+        "no-highlights": "Nothing interesting"
+      },
+      "employee-leaves": "{employee} leaves Blizzard Entertainment"
+    }
+  }
+}
