@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Router, Route } from 'svelte-routing';
-  import { isLoading, locale } from 'svelte-i18n';
+  import { isLoading as areTranslationsLoading } from 'svelte-i18n';
 	import HomePage from './HomePage.svelte';
 	import TimelinePage from './TimelinePage.svelte';
   import { FOOTER_BANNER_TEXT } from './lib/env';
@@ -29,7 +29,7 @@
   }
 </style>
 
-{#if !$isLoading}
+{#if !$areTranslationsLoading}
   <Router>
     <Route
       component={HomePage}
@@ -39,10 +39,10 @@
       component={TimelinePage}
     />
   </Router>
-{/if}
 
-{#if FOOTER_BANNER_TEXT}
-  <footer class="footer-banner">
-    {@html FOOTER_BANNER_TEXT.replace('\\n', '\n')}
-  </footer>
+  {#if FOOTER_BANNER_TEXT}
+    <footer class="footer-banner">
+      {@html FOOTER_BANNER_TEXT.replace('\\n', '\n')}
+    </footer>
+  {/if}
 {/if}
