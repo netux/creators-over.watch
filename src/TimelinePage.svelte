@@ -2,7 +2,7 @@
   import { t } from 'svelte-i18n';
   import { Link } from 'svelte-routing';
   import ChevronBack from 'svelte-ionicons/ChevronBackOutline.svelte';
-  import { getDaysInYear, getDayOfYear, format as formatDate, parseISO, differenceInYears } from 'date-fns';
+  import { format as formatDate, parseISO, differenceInDays } from 'date-fns';
   import patchNotesStatsJSON from '$assets/PatchNotes_Stats.jsonc';
   import blizzardEmployeeStatsJSON from '$assets/BlizzardEmployees_Stats.jsonc';
 	import TimelinePlotPointPopover from './lib/TimelinePlotPointPopover.svelte';
@@ -120,7 +120,7 @@
     }
   }
 
-  const yearWidth = 12 /* months in a year */ * 20 /* width per month */;
+  const graphHorizontalMargin = 20;
 
   const yearMarkerLineHeight = 2;
   const yearMarkerTextOffsetFromLine = 10;
@@ -135,26 +135,16 @@
   const plotPointMaxHeight = 60;
 
   const trackedTimeLineFloorWidth = dateRange
-    ? (differenceInYears(dateRange.max, dateRange.min) + 1) /* years */ * yearWidth
+    ? (differenceInDays(dateRange.max, dateRange.min) + 1)
     : 100;
   const untrackedTimeLineFloorWidth = dateRange
-    ? (differenceInYears(now, dateRange.max) + 1) /* years */ * yearWidth
+    ? differenceInDays(now, dateRange.max)
     : 0;
 
   const untrackedFloorLineHeight = 1.75;
 
-  const viewBoxWidth = trackedTimeLineFloorWidth + untrackedTimeLineFloorWidth;
+  const viewBoxWidth = trackedTimeLineFloorWidth + untrackedTimeLineFloorWidth + graphHorizontalMargin * 2;
   const viewBoxHeight = plotPointMaxHeight + floorHeight + (yearMarkerLength + yearMarkerLineHeight);
-
-  function calculatePlotPointPosition(plotPoint: PlotPoint) {
-    const yearIdx = plotPoint.date.getFullYear() - dateRange!.min.getFullYear();
-    const dayOfYearPercentage = getDayOfYear(plotPoint.date) / getDaysInYear(plotPoint.date);
-
-    return {
-      x: yearIdx * yearWidth + yearWidth * dayOfYearPercentage,
-      height: plotPointMaxHeight * (plotPoint.weight / maxPatchNotesPlotPointWeight)
-    };
-  }
 </script>
 
 <style lang="scss">
@@ -402,7 +392,7 @@
         <!-- Year Markers -->
         <g id="Timeline__year-markers">
           {#each range(dateRange.min.getFullYear() + 1, now.getFullYear() + 1) as year}
-            {@const x = (year - dateRange.min.getFullYear()) * yearWidth}
+            {@const x = graphHorizontalMargin * 2 + differenceInDays(new Date(year, 0, 0), dateRange.min)}
             <g>
               <!-- Line -->
               <path
@@ -434,7 +424,8 @@
           {#each prioritizedPlotPoint as plotPoint}
             {#if enabledPlotPointEvents[plotPoint.event]}
               <!-- TODO(netux): a11y -->
-              {@const { x, height } = calculatePlotPointPosition(plotPoint)}
+              {@const x = graphHorizontalMargin + differenceInDays(plotPoint.date, dateRange.min)}
+              {@const height = plotPointMaxHeight * (plotPoint.weight / maxPatchNotesPlotPointWeight)}
               <!-- svelte-ignore a11y-mouse-events-have-key-events -->
               <!-- svelte-ignore a11y-no-static-element-interactions -->
               <rect
@@ -463,7 +454,7 @@
         id="Timeline__floor"
         d="
           M 0 {viewBoxHeight - floorHeight}
-          L {trackedTimeLineFloorWidth} {viewBoxHeight - floorHeight}
+          L {graphHorizontalMargin + trackedTimeLineFloorWidth} {viewBoxHeight - floorHeight}
         "
         stroke="var(--Timeline__axis-color)"
         stroke-width="{floorStrokeWidth}"
@@ -472,8 +463,8 @@
       <path
         id="Timeline__floor"
         d="
-          M {trackedTimeLineFloorWidth} {viewBoxHeight - floorHeight}
-          L {trackedTimeLineFloorWidth + untrackedTimeLineFloorWidth} {viewBoxHeight - floorHeight}
+          M {graphHorizontalMargin + trackedTimeLineFloorWidth} {viewBoxHeight - floorHeight}
+          L {graphHorizontalMargin * 2 + trackedTimeLineFloorWidth + untrackedTimeLineFloorWidth} {viewBoxHeight - floorHeight}
         "
         stroke="var(--Timeline__axis-untracked-color)"
         stroke-width="{floorStrokeWidth}"
@@ -481,7 +472,7 @@
       <text
         class="untracked-floor-text"
         style:--line-height={untrackedFloorLineHeight}
-        x={trackedTimeLineFloorWidth + untrackedTimeLineFloorWidth / 2}
+        x={graphHorizontalMargin * 2 + trackedTimeLineFloorWidth + untrackedTimeLineFloorWidth / 2}
         y={viewBoxHeight - floorHeight - untrackedFloorLineHeight}
         text-anchor="middle"
         fill="currentcolor"
