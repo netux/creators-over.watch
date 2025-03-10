@@ -21,9 +21,9 @@
   "WorkshopUpdateTimeCounters": {
     "last-big-update": {
       "before": "It's been",
-      "after": "since the last <link:Overwatch Workshop update>"
+      "after": "since the last <link:significant Overwatch Workshop update>"
     },
-    "last-okay-update": "and <timeSince> since the last moderately okay <link:Overwatch Workshop update>"
+    "last-okay-update": "and <timeSince> since the last <link:moderately okay Overwatch Workshop update>"
   },
   "TimelinePage": {
     "tab-title": "Creators of Overwatch - Patches Timeline",

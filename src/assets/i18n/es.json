@@ -49,7 +49,7 @@
   },
   "WorkshopUpdateTimeCounters": {
     "last-big-update": {
-      "after": "desde la última gran <link:actualización de la Workshop de Overwatch>",
+      "after": "desde la última <link:gran actualización de la Workshop de Overwatch>",
       "before": "Han pasado"
     },
     "last-okay-update": "y <timeSince> desde que la última <link:actualización de la Workshop de Overwatch> que fué moderadamente okay"
