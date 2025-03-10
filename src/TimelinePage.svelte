@@ -141,7 +141,7 @@
     ? differenceInDays(now, dateRange.max)
     : 0;
 
-  const untrackedFloorLineHeight = 1.75;
+  const untrackedFloorTextLineHeight = 1.5;
 
   const viewBoxWidth = trackedTimeLineFloorWidth + untrackedTimeLineFloorWidth + graphHorizontalMargin * 2;
   const viewBoxHeight = plotPointMaxHeight + floorHeight + (yearMarkerLength + yearMarkerLineHeight);
@@ -386,6 +386,11 @@
             fill="context-stroke"
           />
         </marker>
+
+        <linearGradient id="Timeline__untracked-floor-gradient">
+          <stop offset="0%" stop-color="var(--Timeline__axis-color)" />
+          <stop offset="20%" stop-color="var(--Timeline__axis-untracked-color)" />
+        </linearGradient>
       </defs>
 
       {#if dateRange}
@@ -398,7 +403,7 @@
               <path
                 id="Timeline__year-marker__{year}"
                 d="
-                  M {x} {viewBoxHeight - floorHeight}
+                  M {x} {viewBoxHeight - floorHeight + floorStrokeWidth / 2}
                   L {x} {viewBoxHeight - (yearMarkerDotSize * 3 + yearMarkerLineHeight / 2)}
                 "
                 stroke="var(--Timeline__axis-color)"
@@ -450,33 +455,35 @@
       {/if}
 
       <!-- Floors -->
-      <path
-        id="Timeline__floor"
-        d="
-          M 0 {viewBoxHeight - floorHeight}
-          L {graphHorizontalMargin + trackedTimeLineFloorWidth} {viewBoxHeight - floorHeight}
-        "
-        stroke="var(--Timeline__axis-color)"
-        stroke-width="{floorStrokeWidth}"
+      <rect
+        id="Timeline__tracked-floor"
+        x={0}
+        y={viewBoxHeight - floorHeight}
+        width={graphHorizontalMargin + trackedTimeLineFloorWidth}
+        height={floorStrokeWidth}
+        fill="var(--Timeline__axis-color)"
       />
 
-      <path
-        id="Timeline__floor"
-        d="
-          M {graphHorizontalMargin + trackedTimeLineFloorWidth} {viewBoxHeight - floorHeight}
-          L {graphHorizontalMargin * 2 + trackedTimeLineFloorWidth + untrackedTimeLineFloorWidth} {viewBoxHeight - floorHeight}
-        "
-        stroke="var(--Timeline__axis-untracked-color)"
-        stroke-width="{floorStrokeWidth}"
-      />
-      <text
-        class="untracked-floor-text"
-        style:--line-height={untrackedFloorLineHeight}
-        x={graphHorizontalMargin * 2 + trackedTimeLineFloorWidth + untrackedTimeLineFloorWidth / 2}
-        y={viewBoxHeight - floorHeight - untrackedFloorLineHeight}
-        text-anchor="middle"
-        fill="currentcolor"
-      >{$t("TimelinePage.timeline.untracked-text")}</text>
+      {#if trackedTimeLineFloorWidth > 50}
+        <rect
+          id="Timeline__untracked-floor"
+          x={graphHorizontalMargin + trackedTimeLineFloorWidth}
+          y={viewBoxHeight - floorHeight}
+          width={untrackedTimeLineFloorWidth + graphHorizontalMargin}
+          height={floorStrokeWidth}
+          fill="url(#Timeline__untracked-floor-gradient)"
+        />
+
+        <text
+          id="Timeline__untracked-floor-text"
+          class="untracked-floor-text"
+          style:--line-height={untrackedFloorTextLineHeight}
+          x={graphHorizontalMargin + trackedTimeLineFloorWidth + untrackedTimeLineFloorWidth}
+          y={viewBoxHeight - floorHeight - untrackedFloorTextLineHeight * 4}
+          text-anchor="end"
+          fill="currentcolor"
+        >{$t("TimelinePage.timeline.untracked-text")}</text>
+      {/if}
     </svg>
 
     {#if hoveredPlotPoint}
