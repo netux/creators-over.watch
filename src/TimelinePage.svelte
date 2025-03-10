@@ -1,5 +1,7 @@
 <script lang="ts">
   import { t } from 'svelte-i18n';
+  import { Link } from 'svelte-routing';
+  import ChevronBack from 'svelte-ionicons/ChevronBackOutline.svelte';
   import { getDaysInYear, getDayOfYear, format as formatDate, parseISO } from 'date-fns';
   import patchNotesStatsJSON from '$assets/PatchNotes_Stats.jsonc';
   import blizzardEmployeeStatsJSON from '$assets/BlizzardEmployees_Stats.jsonc';
@@ -289,6 +291,9 @@
 <div class="timeline">
   <div>
     <header class="heading">
+      <Link to="../" title={$t("TimelinePage.heading.back-link-tooltip")}>
+        <ChevronBack size=32 />
+      </Link>
       <span class="heading__title">{$t('TimelinePage.heading.title')}</span>
       <span class="heading__credits">
         <ComplexTranslation

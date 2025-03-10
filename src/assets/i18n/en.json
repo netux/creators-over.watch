@@ -16,6 +16,11 @@
     }
   },
   "HomePage": {
+    "header": {
+      "buttons": {
+        "timeline-link-tooltip": "See Overwatch Patch Timeline"
+      }
+    },
     "tab-title": "Creators of Overwatch"
   },
   "WorkshopUpdateTimeCounters": {
@@ -30,7 +35,8 @@
     "heading": {
       "title": "Overwatch Update Timeline",
       "range": "{min} - {max} (last updated {lastUpdated})",
-      "credits": "by <link:CactusPuppy>"
+      "credits": "by <link:CactusPuppy>",
+      "back-link-tooltip": "Back to home page"
     },
     "legend": {
       "workshop-dev-leaves": "Workshop dev leaves",

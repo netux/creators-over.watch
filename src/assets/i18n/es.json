@@ -16,13 +16,19 @@
     }
   },
   "HomePage": {
+    "header": {
+      "buttons": {
+        "timeline-link-tooltip": "Ver Cronología de Parches de Overwatch"
+      }
+    },
     "tab-title": "Creadores de Overwatch"
   },
   "TimelinePage": {
     "heading": {
       "credits": "por <link:CactusPuppy>",
       "range": "{min} - {max} (última actualización {lastUpdated})",
-      "title": "Cronología de Parches de Overwatch"
+      "title": "Cronología de Parches de Overwatch",
+      "back-link-tooltip": "Volver a la página principal"
     },
     "legend": {
       "major-workshop-update": "Actualización con cosas significativas para la Workshop",
