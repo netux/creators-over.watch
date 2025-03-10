@@ -36,7 +36,10 @@
       "workshop-bugfix": "Parche con arreglos para la Workshop",
       "workshop-dev-leaves": "Desarollador de la Workshop se va"
     },
-    "tab-title": "Creadores de Overwatch - Cronología de actualizaciones"
+    "tab-title": "Creadores de Overwatch - Cronología de actualizaciones",
+    "timeline": {
+      "untracked-text": "nada interesante desde entonces…"
+    }
   },
   "TimelinePlotPointPopover": {
     "content": {

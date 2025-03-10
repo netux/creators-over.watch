@@ -2,7 +2,7 @@
   import { t } from 'svelte-i18n';
   import { Link } from 'svelte-routing';
   import ChevronBack from 'svelte-ionicons/ChevronBackOutline.svelte';
-  import { getDaysInYear, getDayOfYear, format as formatDate, parseISO } from 'date-fns';
+  import { getDaysInYear, getDayOfYear, format as formatDate, parseISO, differenceInYears } from 'date-fns';
   import patchNotesStatsJSON from '$assets/PatchNotes_Stats.jsonc';
   import blizzardEmployeeStatsJSON from '$assets/BlizzardEmployees_Stats.jsonc';
 	import TimelinePlotPointPopover from './lib/TimelinePlotPointPopover.svelte';
@@ -104,6 +104,8 @@
     element: SVGGeometryElement;
   } | null = null;
 
+  const now = new Date();
+
   let dateRange: { min: Date; max: Date } | null = null;
   for (const stat of plotPoints) {
     if (dateRange) {
@@ -132,9 +134,16 @@
   const plotPointWidth = 3;
   const plotPointMaxHeight = 60;
 
-  const viewBoxWidth = dateRange
-    ? (dateRange.max.getFullYear() - dateRange.min.getFullYear() + 1) /* years */ * yearWidth
+  const trackedTimeLineFloorWidth = dateRange
+    ? (differenceInYears(dateRange.max, dateRange.min) + 1) /* years */ * yearWidth
     : 100;
+  const untrackedTimeLineFloorWidth = dateRange
+    ? (differenceInYears(now, dateRange.max) + 1) /* years */ * yearWidth
+    : 0;
+
+  const untrackedFloorLineHeight = 1.75;
+
+  const viewBoxWidth = trackedTimeLineFloorWidth + untrackedTimeLineFloorWidth;
   const viewBoxHeight = plotPointMaxHeight + floorHeight + (yearMarkerLength + yearMarkerLineHeight);
 
   function calculatePlotPointPosition(plotPoint: PlotPoint) {
@@ -152,6 +161,9 @@
   :root {
     --Timeline__axis-color: #c7cbcd;
 
+    --Timeline__axis-untracked-text-color: #818181;
+    --Timeline__axis-untracked-color: #8a0000;
+
     --Timeline__highlighted-plot-point-stroke-color: rgba(255, 255, 255, 0.9);
 
     --Timeline__event-workshop-dev-leaves-color: #D84244;
@@ -162,7 +174,10 @@
     @media (prefers-color-scheme: light) {
       --Timeline__axis-color: #707273;
 
-      --Timeline__highlighted-plot-point-stroke-color: #00000;
+      --Timeline__axis-untracked-text-color: #0d0d0d;
+      --Timeline__axis-untracked-color: #d10101;
+
+      --Timeline__highlighted-plot-point-stroke-color: #000000;
 
       --Timeline__event-workshop-dev-leaves-color: #B33B3C;
       --Timeline__event-major-workshop-update-color: #C5AF2B;
@@ -239,10 +254,13 @@
     }
   }
 
+  text {
+    font-size: calc(var(--line-height) * 8px); // try to convert "SVG" pixels to CSS pixels
+  }
+
   .year-marker {
     &__text {
       color: var(--Timeline__axis-color);
-      font-size: calc(var(--line-height) * 8px); // try to convert "SVG" pixels to CSS pixels
     }
   }
 
@@ -266,6 +284,11 @@
     &--event-nothing-related-to-workshop {
       color: var(--Timeline__event-nothing-related-to-workshop-color);
     }
+  }
+
+  .untracked-floor-text {
+    color: var(--Timeline__axis-untracked-text-color);
+    font-style: italic;
   }
 
   .rotate-screen-indicator {
@@ -378,7 +401,7 @@
       {#if dateRange}
         <!-- Year Markers -->
         <g id="Timeline__year-markers">
-          {#each range(dateRange.min.getFullYear() + 1, dateRange.max.getFullYear() + 1) as year}
+          {#each range(dateRange.min.getFullYear() + 1, now.getFullYear() + 1) as year}
             {@const x = (year - dateRange.min.getFullYear()) * yearWidth}
             <g>
               <!-- Line -->
@@ -435,17 +458,35 @@
         </g>
       {/if}
 
-      <!-- Floor -->
+      <!-- Floors -->
       <path
         id="Timeline__floor"
         d="
           M 0 {viewBoxHeight - floorHeight}
-          L {viewBoxWidth} {viewBoxHeight - floorHeight}
+          L {trackedTimeLineFloorWidth} {viewBoxHeight - floorHeight}
         "
         stroke="var(--Timeline__axis-color)"
         stroke-width="{floorStrokeWidth}"
       />
-      </svg>
+
+      <path
+        id="Timeline__floor"
+        d="
+          M {trackedTimeLineFloorWidth} {viewBoxHeight - floorHeight}
+          L {trackedTimeLineFloorWidth + untrackedTimeLineFloorWidth} {viewBoxHeight - floorHeight}
+        "
+        stroke="var(--Timeline__axis-untracked-color)"
+        stroke-width="{floorStrokeWidth}"
+      />
+      <text
+        class="untracked-floor-text"
+        style:--line-height={untrackedFloorLineHeight}
+        x={trackedTimeLineFloorWidth + untrackedTimeLineFloorWidth / 2}
+        y={viewBoxHeight - floorHeight - untrackedFloorLineHeight}
+        text-anchor="middle"
+        fill="currentcolor"
+      >{$t("TimelinePage.timeline.untracked-text")}</text>
+    </svg>
 
     {#if hoveredPlotPoint}
       <TimelinePlotPointPopover

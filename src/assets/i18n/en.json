@@ -43,6 +43,9 @@
       "major-workshop-update": "Major Workshop update",
       "workshop-bugfix": "Workshop bugfix",
       "nothing-related-to-workshop": "Nothing related to Workshop"
+    },
+    "timeline": {
+      "untracked-text": "nothing noteworthy since then…"
     }
   },
   "TimelinePlotPointPopover": {
